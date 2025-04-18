@@ -109,4 +109,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(oh-my-posh init zsh --config ~/.dotfiles/data/emodipt-extend.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.dotfiles/data/zsh_theme/emodipt-extend.omp.json)"
