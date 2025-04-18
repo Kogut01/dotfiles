@@ -109,9 +109,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
-  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
-
-eval "$(oh-my-posh init zsh --config ~/Documents/Oh-my-posh_Themes/emodipt-extend.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.dotfiles/data/emodipt-extend.omp.json)"
