@@ -6,3 +6,10 @@
 	cd = checkout
 	ci = commit
 	ss = status --short
+
+[init]
+	defaultBranch = main
+
+[push]
+	default = current
+	autoSetupRemote = true
