@@ -7,6 +7,9 @@
 	ci = commit
 	ss = status --short
 
+[core]
+	excludesFile = ~/.config/git/ignore
+
 [init]
 	defaultBranch = main
 
