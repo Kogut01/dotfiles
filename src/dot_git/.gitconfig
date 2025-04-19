@@ -1,3 +1,8 @@
 [user]
 	name = Michał Popiel
 	email = 131244219+Kogut01@users.noreply.github.com
+
+[alias]
+	cd = checkout
+	ci = commit
+	ss = status --short
