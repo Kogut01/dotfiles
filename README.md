@@ -1,14 +1,11 @@
-<div align="center">
 
 # dotfiles
-
-</div>
 
 A collection of configuration files to set up and customize my development environment. Includes settings for Zsh, Git, and other tools to streamline workflows and maintain consistency across systems.
 
 <br>
 
-## Links
+### Links
 
 <div align="center">
 
