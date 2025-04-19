@@ -5,7 +5,7 @@ A collection of configuration files to set up and customize my development envir
 
 <br>
 
-### Links
+### ↳ Links
 
 <div align="center">
 
