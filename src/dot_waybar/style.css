@@ -1,46 +1,45 @@
 * {
    border: none;
-   border-radius: 0;
-   font-family: Liberation Mono;
+   font-family: "JetBrainsMono Nerd Font", monospace;
+   font-size: 14px;
    min-height: 20px;
+   /*color: #f0e6d2;*/
 }
 
 window#waybar {
    background: transparent;
+   transition: background-color 0.3s ease;
 }
 
-window#waybar.hidden {
-   opacity: 0.2;	
+#custom-kogut01,
+#workspaces {
+    background: rgba(17, 68, 106, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.3);
+    margin-top: 8px;
+    padding: 4px 0;
 }
 
 #custom-kogut01 {
-   margin-top: 8px;
    margin-left: 8px;
-   padding: 0px 10px;
-   font-size: 25px;
-   transition: color .5s;
-   color: #1793d1;
+   font-size: 20px; 
+   padding-left: 8px;
+   border-right: none;
+   border-radius: 10px 0px 0px 10px;  
 }
 
 #workspaces {
-   margin-top: 8px;
    margin-right: 8px;
-   border-radius: 10px;
-   transition: none;
-   background: rgba(17, 68, 106, 0.7);
-   border: 2px solid black;
+   padding-right: 8px;
+   border-radius: 0px 10px 10px 0px;
+   border-left: none;   
 }
 
-#workspaces button {
-   transition: none;
-   background: transparent;
-   color: #ebad51;
-   padding: 5px;
-   font-size: 16px;
-}
-
-#workspaces button.persistent {
-   color: white;
+#workspaces button { 
+   all: unset;
+   padding: 0 8px;  
+   color: rgba(0, 0, 0, 0.35);
+   transition: color 0.25s ease-in-out;
 }
 
 #workspaces button:hover {
@@ -48,8 +47,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-   color: #ebad51;
-   background: rgba(255, 152, 0, 0.12);
+   color: #ff9800;                   
 }
 
 #language,
@@ -63,10 +61,9 @@ window#waybar.hidden {
 #memory,
 #temperature {
    margin-top: 8px;
-   transition: none;
-   color: #ebad51;
    background: rgba(17, 68, 106, 0.7);
-   border: 2px solid black;
+   border: 2px solid rgba(0, 0, 0, 0.5);
+   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #language,
