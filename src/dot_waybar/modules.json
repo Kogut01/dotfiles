@@ -1,0 +1,135 @@
+{
+    // Left modules
+	
+    "custom/kogut01": {
+       "format": "🐓",
+       "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "disable-scroll": true,
+        "sort-by-number": true,
+        "persistent-workspaces": {
+            "*": 4
+        },
+        "tooltip": false
+    }, 
+
+    "hyprland/language": {
+        "format": "{short}  ",
+        "tooltip": false
+    },
+
+    "keyboard-state": {
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {  
+      	    "locked": "",
+            "unlocked": ""
+        },
+       "tooltip": false
+    },
+
+    "custom/pacman": {
+       "format": "{} 󰣇",
+       "interval": 3600,
+       "exec": "(checkupdates;pacman -Qm | yay -Qua) | wc -l",
+       "exec-if": "exit 0",
+       "on-click": "kitty sh -c 'echo Witaj w aktualizatorze!; yay -Syu; echo Zrobione - naciśnij enteraby wyjść.; read'; pkill -SIGRTMIN+8 waybar",
+       "signal": 8,
+       "tooltip": false
+    },
+
+
+
+
+
+    // Center Module
+
+    "clock": {
+    	"format": "🗓 {:L%A, %d %b, %H:%M}",
+    	"locale": "pl_PL.UTF-8",
+    	"tooltip": true,
+    	"tooltip-format": "<tt>{calendar}</tt>"
+    },
+
+    "custom/weather": {
+       	"format": "{}",
+	"tooltip": true,
+	"interval": 1800,
+	"exec": "$HOME/.config/waybar/scripts/wttr.py",
+	"return-type": "json"
+    },
+
+
+
+
+
+    // Right Module
+
+    "pulseaudio": {
+        "format": "{icon} {volume}% {format_source}",
+        "format-source": "  {volume}%",
+        "format-muted": " {format_source}",
+        "format-source-muted": "",
+        "format-icons": {
+            "default": " "
+        },
+	"tooltip": true,
+	"tooltip-format": "🔌 Audio: {desc}\n🎙️ Mikrofon: {source_desc}",
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+	"interval": 5,
+        "format-wifi": "Wi-fi {icon}",
+        "format-ethernet": "Wired {icon}",
+        "format-disconnected": "Offline {icon}",
+	"format-icons": {
+	    "wifi": "󰤨",
+	    "ethernet": "󰈀",
+	    "disconnected": "⚠"
+	},
+        "tooltip": true,
+        "tooltip-format": "🔌 Name: {ifname}\n🌐 IP: {ipaddr}/{cidr}\n🚪 Gateway: {gwaddr}\n🛡️ Netmask: {netmask}",
+	"on-click": "nm-connection-editor"
+    },
+
+    "cpu": {
+        "interval": 5,
+	"format": "{icon} {usage}%",
+	"format-icons": [""],
+	"states": {
+	      "warning": 70,
+	      "critical": 90
+	},
+        "tooltip": true,
+	"on-click": "kitty -e btop"
+    },
+
+    "memory": {
+        "interval": 5,
+	"format": "{icon} {percentage}%",
+	"format-icons": [""],
+	"states": {
+	      "warning": 80,
+	      "critical": 95
+	},
+        "tooltip": true,
+	"on-click": "kitty -e btop"
+    },
+
+    "temperature": {
+        "interval": 5,
+        "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
+        "critical-threshold": 90,
+        "format-critical": " {temperatureC}°C",
+        "warning-threshold": 70,
+        "format-warning": " {temperatureC}°C",
+        "format": " {temperatureC}°C",
+        "tooltip": false,
+	"on-click": "kitty -e btop"
+    }
+
+}

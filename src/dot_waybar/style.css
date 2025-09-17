@@ -1,0 +1,126 @@
+* {
+   border: none;
+   border-radius: 0;
+   font-family: Liberation Mono;
+   min-height: 20px;
+}
+
+window#waybar {
+   background: transparent;
+}
+
+window#waybar.hidden {
+   opacity: 0.2;	
+}
+
+#custom-kogut01 {
+   margin-top: 8px;
+   margin-left: 8px;
+   padding: 0px 10px;
+   font-size: 25px;
+   transition: color .5s;
+   color: #1793d1;
+}
+
+#workspaces {
+   margin-top: 8px;
+   margin-right: 8px;
+   border-radius: 10px;
+   transition: none;
+   background: rgba(17, 68, 106, 0.7);
+   border: 2px solid black;
+}
+
+#workspaces button {
+   transition: none;
+   background: transparent;
+   color: #ebad51;
+   padding: 5px;
+   font-size: 16px;
+}
+
+#workspaces button.persistent {
+   color: white;
+}
+
+#workspaces button:hover {
+   background: rgba(255, 182, 0, 0.12);
+}
+
+#workspaces button.active {
+   color: #ebad51;
+   background: rgba(255, 152, 0, 0.12);
+}
+
+#language,
+#keyboard-state,
+#custom-pacman,
+#clock,
+#custom-weather,
+#pulseaudio,
+#network, 
+#cpu,
+#memory,
+#temperature {
+   margin-top: 8px;
+   transition: none;
+   color: #ebad51;
+   background: rgba(17, 68, 106, 0.7);
+   border: 2px solid black;
+}
+
+#language,
+#clock,
+#cpu {
+   padding-right: 8px;
+   padding-left: 16px;
+   border-radius: 10px 0px 0px 10px;
+   border-right: none;   
+}
+
+#keyboard-state,
+#custom-weather,
+#memory {
+   padding-right: 16px;
+   padding-left: 8px;
+   border-radius: 0px 10px 10px 0px;
+   border-left: none;   
+}
+
+#memory {
+   margin-right: 8px;
+}
+
+#custom-pacman { 
+   margin-left: 8px;
+   padding-left: 16px;
+   padding-right: 16px;
+   border-radius: 10px;
+}
+
+#network,
+#temperature { 
+   margin-right: 8px;
+   padding-left: 16px;
+   padding-right: 16px;
+   border-radius: 10px;
+}
+
+#pulseaudio {
+   margin-right: 8px;
+   padding-left: 8px;   
+   padding-right: 8px;
+   border-radius: 10px;
+}
+
+#pulseaudio.muted {
+   background-color: #90b1b1;
+   color: #2a5c45;
+}
+
+@keyframes blink {
+   to {
+      background-color: #ffffff;
+      color: #000000;
+   }
+}
