@@ -9,4 +9,4 @@ configuration {
     font: "JetBrainsMono Nerd Font 11";
 }
 
-@theme "~/.config/rofi/theme.rasi"      /* ścieżka do twojego motywu */
+@theme "~/.config/rofi/theme.rasi"
