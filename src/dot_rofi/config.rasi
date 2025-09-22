@@ -1,0 +1,12 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;                
+    icon-theme: "Tux-on-Pixels";             
+    display-drun: "Applications";
+    display-run: "Commands";
+    display-window: "Windows";
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+@theme "~/.config/rofi/theme.rasi"      /* ścieżka do twojego motywu */
