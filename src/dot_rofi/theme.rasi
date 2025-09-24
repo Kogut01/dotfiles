@@ -1,51 +1,37 @@
 * {
     font: "JetBrains Nerd Font 11";
-    bg0: #0e141e;
-    bg1: #111823;
-    bg2: #1a2332;
-    bg3: #243447;
-    fg0: #c7b299;
-    fg1: #a09184;
-    fg2: #6b5d52;
-    water: #2c5f7c;
-    sky: #5e81ac;
-    moon: #e8dcc6;
-    forest: #1e2f1e;
-    accent: @water;
-    urgent: @sky;
+    bg0: #0f1929;
+    bg1: #1a2740;
+    bg2: #243447;
+    fg0: #c7d5e8;
+    fg1: #a8c1e0;
+    fg2: #7a93b8;
+    water: #4a7bc8;
+    sky: #6b93d6;
+    moon: #e8f2ff;
     background-color: transparent;
     text-color: @fg0;
-    margin: 0;
     padding: 0;
     spacing: 0;
-}
-
-element-icon, element-text, scrollbar {
-    cursor: pointer;
+    margin: 0;
 }
 
 window {
     location: center;
-    width: 420px;
-    background-color: @bg1;
+    width: 450px;
+    background-color: @bg0;
     border: 2px;
-    border-color: @bg3;
-    border-radius: 0;
+    border-color: #1c1c1c;
+    border-radius: 16px;
+    padding: 8px;
     children: [ inputbar, listview ];
 }
 
 inputbar {
     spacing: 12px;
-    padding: 12px 16px;
-    children: [ icon-search, entry ];
+    padding: 16px 20px;
+    children: [ entry, icon-search];
     background-color: @bg0;
-    border-radius: 0;
-    border: 0px 0px 2px 0px;
-    border-color: @water;
-}
-
-icon-search, entry, element-icon, element-text {
-    vertical-align: 0.5;
 }
 
 icon-search {
@@ -59,61 +45,31 @@ entry {
     placeholder: "Szukaj aplikacji...";
     placeholder-color: @fg2;
     text-color: @moon;
-    border-radius: 0;
-}
-
-textbox {
-    padding: 8px 12px;
     background-color: @bg2;
-    text-color: @fg1;
+    border: 1px;
+    border-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 10px 14px;
 }
 
 listview {
-    padding: 8px 0px;
     lines: 8;
-    columns: 1;
     scrollbar: true;
-    fixed-height: false;
-    dynamic: true;
-    background-color: @bg1;
-    border-radius: 0;
+    background-color: @bg0;
 }
 
 element {
-    padding: 12px 16px;
+    padding: 14px 14px;
     spacing: 16px;
-    border-radius: 0;
-    margin: 0px 8px 2px 8px;
-}
-
-element normal urgent {
-    text-color: @sky;
-}
-
-element normal active {
-    text-color: @water;
-    background-color: rgba(44, 95, 124, 0.3);
-}
-
-element alternate active {
-    text-color: @water;
-    background-color: rgba(44, 95, 124, 0.2);
+    background-color: @bg0;
+    text-color: @fg0;
+    margin: 0 20px 0 20px;
 }
 
 element selected {
-    text-color: @bg0;
     background-color: @water;
-    border-radius: 0;
-}
-
-element selected urgent {
-    background-color: @sky;
-    text-color: @bg0;
-}
-
-element selected active {
-    background-color: @sky;
-    text-color: @bg0;
+    text-color: @moon;
+    border-radius: 8px;
 }
 
 element-icon {
@@ -121,19 +77,14 @@ element-icon {
     color: @water;
 }
 
-element-text {
-    text-color: inherit;
-    font: "JetBrains Nerd Font 11";
+element selected element-icon {
+    color: @moon;
 }
 
 scrollbar {
-    handle-width: 6px;
+    width: 4px;
     handle-color: @water;
-    padding: 0 6px;
-    border-radius: 0;
-}
-
-element normal.normal {
-    background-color: transparent;
-    text-color: @fg0;
+    background-color: #2a2a2a;
+    border-radius: 2px;
+    margin: 0 24px 12px 0;
 }

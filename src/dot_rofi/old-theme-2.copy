@@ -1,0 +1,229 @@
+* {
+    font: "JetBrains Nerd Font 11";
+    bg0: #0f1929;
+    bg1: #1a2740;
+    bg2: #243447;
+    bg3: #355070;
+    fg0: #c7d5e8;
+    fg1: #a8c1e0;
+    fg2: #7a93b8;
+    water: #4a7bc8;
+    sky: #6b93d6;
+    moon: #e8f2ff;
+    accent: @water;
+    urgent: @sky;
+    background-color: transparent;
+    text-color: @fg0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+element-icon, element-text, scrollbar {
+    cursor: pointer;
+}
+
+window {
+    location: center;
+    width: 450px;
+    background-color: @bg1;
+    border: 2px;
+    border-color: @water;
+    border-radius: 16px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    spacing: 12px;
+    padding: 16px 20px;
+    children: [ entry, icon-search];
+    background-color: @bg0;
+    border-radius: 12px 12px 0px 0px;
+    border: 0px 0px 1px 0px;
+    border-color: @water;
+}
+
+icon-search, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+icon-search {
+    expand: false;
+    filename: "search-symbolic";
+    size: 18px;
+    color: @water;
+}
+
+entry {
+    placeholder: "Szukaj aplikacji...";
+    placeholder-color: @fg2;
+    text-color: @moon;
+    background-color: @bg2;
+    border: 1px;
+    border-color: @bg3;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+textbox {
+    padding: 12px 16px;
+    background-color: @bg2;
+    text-color: @fg1;
+    border-radius: 0px 0px 12px 12px;
+    border: 1px 0px 0px 0px;
+    border-color: @bg3;
+}
+
+listview {
+    padding: 0px;
+    lines: 8;
+    columns: 1;
+    scrollbar: true;
+    fixed-height: false;
+    dynamic: true;
+    background-color: transparent;
+    border-radius: 0px 0px 12px 12px;
+    margin: 0px 6px 6px 6px;
+}
+
+element {
+    padding: 14px 20px;
+    spacing: 16px;
+    border-radius: 0px;
+    margin: 0px;
+    background-color: @bg1;
+}
+
+element normal.normal {
+    background-color: @bg1;
+    text-color: @fg0;
+}
+
+element alternate.normal {
+    background-color: @bg1;
+    text-color: @fg0;
+}
+
+element normal urgent {
+    text-color: @urgent;
+    background-color: @bg1;
+}
+
+element alternate urgent {
+    text-color: @urgent;
+    background-color: @bg1;
+}
+
+element normal active {
+    text-color: @water;
+    background-color: @bg1;
+}
+
+element alternate active {
+    text-color: @water;
+    background-color: @bg1;
+}
+
+element selected.normal {
+    text-color: @moon;
+    background-color: @water;
+    border-radius: 0px;
+}
+
+element selected.alternate {
+    text-color: @moon;
+    background-color: @water;
+    border-radius: 0px;
+}
+
+element selected urgent {
+    background-color: @urgent;
+    text-color: @moon;
+    border-radius: 0px;
+}
+
+element selected active {
+    background-color: @sky;
+    text-color: @moon;
+    border-radius: 0px;
+}
+
+element-icon {
+    size: 28px;
+    color: @water;
+}
+
+element selected element-icon {
+    color: @bg0;
+}
+
+element-text {
+    text-color: inherit;
+    font: "JetBrains Nerd Font 11";
+}
+
+scrollbar {
+    width: 6px;
+    handle-width: 6px;
+    handle-color: @water;
+    padding: 0px 4px;
+    border-radius: 4px;
+    background-color: @bg1;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg0;
+}
+
+/* Dodatkowe stany dla lepszego wyglądu */
+element.alternate {
+    background-color: @bg0;
+}
+
+element selected.normal {
+    background-color: @water;
+    text-color: @bg0;
+}
+
+element selected.alternate {
+    background-color: @water;
+    text-color: @bg0;
+}
+
+/* Styling dla różnych trybów */
+mode-switcher {
+    spacing: 0;
+    background-color: @bg2;
+    border: 1px;
+    border-color: @bg3;
+    border-radius: 6px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: @bg1;
+    text-color: @fg1;
+    border: 0px;
+    border-radius: 4px;
+}
+
+button selected {
+    background-color: @water;
+    text-color: @bg0;
+}
+
+/* Message styling */
+message {
+    padding: 12px;
+    background-color: @bg2;
+    border: 1px;
+    border-color: @bg3;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+textbox {
+    text-color: @fg1;
+    background-color: transparent;
+}
