@@ -1,0 +1,94 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/rooster.txt",
+    "height": 18, 
+    "color": {
+      "1": "251"
+  }
+  },
+  "display": {
+    "separator": " : "
+  },
+  "modules": [
+    "break",
+    {
+      "type": "os",
+      "key": "    OS        ",
+      "keyColor": "38;5;67"
+    },
+    {
+      "type": "kernel",
+      "key": "    Kernel    ",
+      "keyColor": "38;5;31"
+    },
+    {
+      "type": "packages",
+      "key": "  󰏗  Packages  ",
+      "keyColor": "38;5;24"
+    },
+    {
+      "type": "display",
+      "key": "  󱍜  Display   ",
+      "keyColor": "38;5;240"
+    },
+    {
+      "type": "wm",
+      "key": "    WM        ",
+      "keyColor": "38;5;240"
+    },
+    {
+      "type": "terminal",
+      "key": "    Terminal  ",
+      "keyColor": "38;5;24"
+    },
+    {
+      "type": "command",
+      "key": "  󱦟  OS Age    ",
+      "keyColor": "38;5;31",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+    },
+    {
+      "type": "uptime",
+      "key": "    Uptime    ",
+      "keyColor": "38;5;67"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "  󰊤  GitHub     : Kogut01",
+      "keyColor": "38;5;251"
+    },
+    {
+      "type": "title",
+      "key": "    User      ",
+      "keyColor": "38;5;251"
+    },
+    "break",
+    {
+      "type": "cpu",
+      "format": "{1}",
+      "key": "    CPU       ",
+      "keyColor": "38;5;67"
+    },
+    {
+      "type": "gpu",
+      "format": "{2}",
+      "key": "    GPU       ",
+      "keyColor": "38;5;31"
+    },
+    {
+      "type": "gpu",
+      "format": "{3}",
+      "key": "    GPU Driver",
+      "keyColor": "38;5;24"
+    },
+    {
+      "type": "memory",
+      "key": "    Memory    ",
+      "keyColor": "38;5;240"
+    },
+    "break"
+  ]
+}
+
