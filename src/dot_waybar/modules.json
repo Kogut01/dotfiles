@@ -39,7 +39,7 @@
        "interval": 3600,
        "exec": "(checkupdates;pacman -Qm | yay -Qua) | wc -l",
        "exec-if": "exit 0",
-       "on-click": "kitty sh -c 'echo Witaj w aktualizatorze!; yay -Syu; echo Zrobione - naciśnij enteraby wyjść.; read'; pkill -SIGRTMIN+8 waybar",
+       "on-click": "ghostty sh -c 'echo Witaj w aktualizatorze!; yay -Syu; echo Zrobione - naciśnij enteraby wyjść.; read'; pkill -SIGRTMIN+8 waybar",
        "signal": 8,
        "tooltip": false
     },
@@ -108,7 +108,7 @@
 	      "critical": 90
 	},
         "tooltip": true,
-	"on-click": "kitty -e btop"
+	"on-click": "ghostty -e btop"
     },
 
     "memory": {
@@ -120,7 +120,7 @@
 	      "critical": 95
 	},
         "tooltip": true,
-	"on-click": "kitty -e btop"
+	"on-click": "ghostty -e btop"
     },
 
     "temperature": {
@@ -132,7 +132,7 @@
         "format-warning": " {temperatureC}°C",
         "format": " {temperatureC}°C",
         "tooltip": false,
-	"on-click": "kitty -e btop"
+	"on-click": "ghostty -e btop"
     }
 
 }
