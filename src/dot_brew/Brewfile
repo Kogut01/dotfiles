@@ -1,33 +1,18 @@
-tap "hashicorp/tap"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
-# GNU multiple precision arithmetic library
-brew "gmp"
-# Graph visualization software from AT&T and Bell Labs
-brew "graphviz"
-# YAML Parser
-brew "libyaml"
-# Fast, highly customisable system info script
-brew "neofetch"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Prompt theme engine for any shell
 brew "oh-my-posh"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
-# Powerful, clean, object-oriented scripting language
-brew "ruby@3.3"
-# Safe, concurrent, practical language
-brew "rust"
-# Modern and pretty fancy file manager for the terminal
-brew "superfile"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Terraform
-brew "hashicorp/tap/terraform"
+# File browser
+brew "ranger"
