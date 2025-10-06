@@ -5,16 +5,44 @@ A collection of configuration files to set up and customize my development envir
 
 <br>
 
-### ↳ Links
+### ↳ Links for all 🌍
 
 <div align="center">
 
 |                    |                                            |
 | ------------------ | ------------------------------------------ |
-| 🐚 `zsh`           | [[dot_zsh]](./src/dot_zsh/)                |
+| 📊 `fastfetch`     | [[dot_fastfetch]](./src/dot_fastfetch/)    |
 | 👻 `ghostty`       | [[dot_ghostty]](./src/dot_ghostty/)        |
-| 🍺 `brew`          | [[dot_brew]](./src/dot_brew/)              |
 | 🐙 `git`           | [[dot_git]](./src/dot_git/)                |
-| 📝 `vscode`        | [[dot_vscode]](./src/dot_vscode/)          |
+| 📝 `nvim`         | [[dot_nvim]](./src/dot_nvim/)               |
+| 🐚 `zsh`           | [[dot_zsh]](./src/dot_zsh/)                |
+
+
+</div>
+
+<br>
+
+### ↳ MacOS 🍎
+
+<div align="center">
+
+|                    |                                            |
+| ------------------ | ------------------------------------------ |
+| 🍺 `brew`          | [[dot_brew]](./src/dot_brew/)              |
+
+</div>
+
+<br>
+
+### ↳ Arch 🐧
+ 
+<div align="center">
+
+|                       |                                                   |
+| --------------------- | ------------------------------------------------- |
+| 👋 `greetd + regreet` | [[dot_greetd_regreet]](./src/dot_greetd_regreet/) |
+| 🪟 `hyprland`         | [[dot_hypr]](./src/dot_hyprl/)                    |
+| 🔍 `rofi`             | [[dot_rofi]](./src/dot_rofi/)                     |
+| 🗻 `waybar`           | [[dot_waybar]](./src/dot_waybar/)                 |
 
 </div>
