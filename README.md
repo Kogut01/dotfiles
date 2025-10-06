@@ -5,16 +5,18 @@ A collection of configuration files to set up and customize my development envir
 
 <br>
 
-### ↳ Links for all systems 🌍
+### ↳ 🌍 Links for all systems
 
 <div align="center">
 
 |                    |                                            |
 | ------------------ | ------------------------------------------ |
-| 📊 `fastfetch`     | [[dot_fastfetch]](./src/dot_fastfetch/)    |
+| 🦇 `bat`           | [[dot_bat]](./src/dot_bat/)                |
+| 📈 `btop`          | [[dot_btop]](./src/dot_btop/)              |
+| 🚀 `fastfetch`     | [[dot_fastfetch]](./src/dot_fastfetch/)    |
 | 👻 `ghostty`       | [[dot_ghostty]](./src/dot_ghostty/)        |
 | 🐙 `git`           | [[dot_git]](./src/dot_git/)                |
-| 📝 `nvim`          | [[dot_nvim]](./src/dot_nvim/)               |
+| 📝 `nvim`          | [[dot_nvim]](./src/dot_nvim/)              |
 | 🐚 `zsh`           | [[dot_zsh]](./src/dot_zsh/)                |
 
 
@@ -22,7 +24,7 @@ A collection of configuration files to set up and customize my development envir
 
 <br>
 
-### ↳ MacOS 🍎
+### ↳ 🍎 MacOS
 
 <div align="center">
 
@@ -34,7 +36,7 @@ A collection of configuration files to set up and customize my development envir
 
 <br>
 
-### ↳ Arch 🐧
+### ↳ 🐧 Arch 
  
 <div align="center">
 
