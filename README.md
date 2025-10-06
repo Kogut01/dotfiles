@@ -5,7 +5,7 @@ A collection of configuration files to set up and customize my development envir
 
 <br>
 
-### ↳ Links for all 🌍
+### ↳ Links for all systems 🌍
 
 <div align="center">
 
@@ -14,7 +14,7 @@ A collection of configuration files to set up and customize my development envir
 | 📊 `fastfetch`     | [[dot_fastfetch]](./src/dot_fastfetch/)    |
 | 👻 `ghostty`       | [[dot_ghostty]](./src/dot_ghostty/)        |
 | 🐙 `git`           | [[dot_git]](./src/dot_git/)                |
-| 📝 `nvim`         | [[dot_nvim]](./src/dot_nvim/)               |
+| 📝 `nvim`          | [[dot_nvim]](./src/dot_nvim/)               |
 | 🐚 `zsh`           | [[dot_zsh]](./src/dot_zsh/)                |
 
 
