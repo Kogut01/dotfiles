@@ -1,0 +1,34 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "sqldeveloper.sqlHistory.historyLimit": 500,
+    "sqldeveloper.telemetry.enabled": true,
+    "editor.accessibilitySupport": "on",
+    "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
+    "workbench.settings.applyToAllProfiles": [
+        "terminal.integrated.fontFamily"
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.colorCustomizations": {
+        },
+    "window.titleBarStyle": "custom",
+    "vscode_vibrancy.opacity": 0.2,
+    "vscode_vibrancy.preferedLightTheme": "Default Dark",
+    "vscode_vibrancy.refreshInterval": 1,
+    "animations.Install-Method": "Apc Customize UI++",
+    "apc.imports": [
+        "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    ],
+    "workbench.colorTheme": "GitHub Dark Default",
+    "vscode_vibrancy.type": "sidebar",
+    "vscode_vibrancy.imports": [
+        "/path/to/file"
+    ],
+    "workbench.preferredDarkColorTheme": "Default Dark+",
+    "editor.fontFamily": "MesloLGL Nerd Font",
+    }
