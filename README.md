@@ -42,8 +42,9 @@ My personal dotfiles repository. It contains configuration files for various app
 
 |                       |                                                   |
 | --------------------- | ------------------------------------------------- |
+| 📦 `pacman + yay`     | [[dot_arch]](./src/dot_arch/)                     |
 | 👋 `greetd + regreet` | [[dot_greetd_regreet]](./src/dot_greetd_regreet/) |
-| 🪟 `hyprland`         | [[dot_hypr]](./src/dot_hyprl/)                    |
+| 🪟 `hyprland`         | [[dot_hypr]](./src/dot_hypr/)                    |
 | 🔍 `rofi`             | [[dot_rofi]](./src/dot_rofi/)                     |
 | 🗻 `waybar`           | [[dot_waybar]](./src/dot_waybar/)                 |
 
