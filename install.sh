@@ -18,7 +18,12 @@ install_brewfile() {
 
 # install_arch_packages() {
 #   echo "Instaluję pakiety z pacman_packages.txt..."
-#   xargs -a "$DOTFILES/src/dot_arch/pacman_packages.txt" sudo pacman -S --noconfirm
+#   sudo pacman -Syu --needed --noconfirm $(< "$HOME/.dotfiles/src/dot_arch/pacman_packages.txt")
+# }
+
+# install_aur_packages() {
+#   echo "Instaluję pakiety z aur_packages.txt..."
+#   yay -Syu --needed --noconfirm $(< "$HOME/.dotfiles/src/dot_arch/aur_packages.txt")
 # }
 
 
@@ -60,6 +65,12 @@ if [ "$OS" = "Darwin" ]; then
 
 elif [ "$OS" = "Linux" ]; then
     echo "Witaj w instalatorze .dotfiles dla systemu Linux"
+
+    # Pacman packages
+    # install_arch_packages
+
+    # AUR packages
+    # install_aur_packages
 
     # Bat
     link_file "$HOME/.dotfiles/src/dot_bat/config" "$HOME/.config/bat/config"
