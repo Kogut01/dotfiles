@@ -1,7 +1,7 @@
 
 # dotfiles
 
-A collection of configuration files to set up and customize my development environment. Includes settings for Zsh, Git, and other tools to streamline workflows and maintain consistency across systems.
+My personal dotfiles repository. It contains configuration files for various applications and tools that I use on my systems. The repository is organized into different directories based on the application or tool, making it easy to find and manage specific configurations.
 
 <br>
 
