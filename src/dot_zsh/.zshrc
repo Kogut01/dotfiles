@@ -28,7 +28,7 @@ plugins=(
 
 # ------------- OH-MY-POSH -------------
 if command -v oh-my-posh >/dev/null 2>&1; then
-    eval "$(oh-my-posh init zsh --config ~/.dotfiles/data/zsh_theme/emodipt-extend.omp.json)"
+    eval "$(oh-my-posh init zsh --config ~/.dotfiles/data/dot_themes/zsh_theme.omp.json)"
 fi
 
 
