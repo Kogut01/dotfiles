@@ -7,22 +7,30 @@
 
 /* Clock styling */
 frame > label:first-child {
-    color: rgba(199, 213, 232, 0.9);
+    color: #f5f5f5;
     font-size: 14px;
     font-weight: 400;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
     margin-top: 10px;
     padding: 12px 18px;
-    background: rgba(15, 25, 45, 0.7);
-    border: 2px solid rgba(74, 123, 200, 0.4);
+    background: rgba(10, 10, 10, 0.85);
+    border: 2px solid #222;
     border-radius: 12px;
     backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+frame > label:first-child:hover {
+    border-color: #fff;
+    box-shadow: 
+        0 6px 16px #000c,
+        inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 /* Background frame - main container */
 grid {
-    background: rgba(15, 25, 45, 0.7);
-    border: 2px solid rgba(74, 123, 200, 0.4);
+    background: rgba(5, 5, 5, 0.92);
+    border: 2px solid #222;
     border-radius: 16px;
     backdrop-filter: blur(12px);
     padding: 15px;
@@ -30,73 +38,73 @@ grid {
 
 /* Text labels (User, Session, Password) */
 label {
-    color: rgba(199, 213, 232, 0.9);
+    color: #f5f5f5;
     font-size: 14px;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* Input fields (Username, Password) */
 entry {
     background: linear-gradient(135deg, 
-        rgba(20, 35, 60, 0.9) 0%, 
-        rgba(30, 50, 85, 0.8) 100%);
-    color: #c7d5e8;
-    border: 1.5px solid rgba(74, 123, 200, 0.4);
+        rgba(20, 20, 20, 0.95) 0%, 
+        rgba(40, 40, 40, 0.92) 100%);
+    color: #f5f5f5;
+    border: 1.5px solid #333;
     border-radius: 10px;
     padding: 12px 14px;
     margin: 0 0 4px 0;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 
-        inset 0 2px 6px rgba(0, 0, 0, 0.4),
-        0 1px 0 rgba(199, 213, 232, 0.1);
+        inset 0 2px 6px rgba(0, 0, 0, 0.5),
+        0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 entry:hover {
-    border-color: rgba(74, 123, 200, 0.6);
+    border-color: #fff;
     background: linear-gradient(135deg, 
-        rgba(25, 40, 70, 0.92) 0%, 
-        rgba(35, 55, 90, 0.88) 100%);
+        rgba(30, 30, 30, 0.98) 0%, 
+        rgba(50, 50, 50, 0.95) 100%);
     box-shadow: 
-        inset 0 1px 0 rgba(199, 213, 232, 0.08),
-        0 4px 12px rgba(0, 0, 0, 0.4);
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Text inside entry */
 text {
-    color: #c7d5e8;
+    color: #f5f5f5;
     font-size: 14px;
 }
 
 /* Session dropdown button */
 .combo {
     background: linear-gradient(135deg, 
-        rgba(20, 35, 60, 0.9) 0%, 
-        rgba(30, 50, 85, 0.8) 100%);
-    color: #c7d5e8;
-    border: 1.5px solid rgba(74, 123, 200, 0.4);
+        rgba(20, 20, 20, 0.95) 0%, 
+        rgba(40, 40, 40, 0.92) 100%);
+    color: #f5f5f5;
+    border: 1.5px solid #333;
     border-radius: 10px;
     padding: 12px 14px;
     margin: 0 0 4px 0;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 
-        inset 0 2px 6px rgba(0, 0, 0, 0.4),
-        0 1px 0 rgba(199, 213, 232, 0.1);
+        inset 0 2px 6px rgba(0, 0, 0, 0.5),
+        0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .combo:hover {
-    border-color: rgba(74, 123, 200, 0.6);
+    border-color: #fff;
     background: linear-gradient(135deg, 
-        rgba(25, 40, 70, 0.92) 0%, 
-        rgba(35, 55, 90, 0.88) 100%);
+        rgba(30, 30, 30, 0.98) 0%, 
+        rgba(50, 50, 50, 0.95) 100%);
     box-shadow: 
-        inset 0 1px 0 rgba(199, 213, 232, 0.08),
-        0 4px 12px rgba(0, 0, 0, 0.4);
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Session dropdown button menu */
 .menu {
-    background: rgba(15, 26, 45, 0.95);
-    border: 1.5px solid rgba(74, 123, 200, 0.4);
+    background: rgba(10, 10, 10, 0.98);
+    border: 1.5px solid #222;
     border-radius: 8px;
     padding: 8px 0;
     margin: 5px 0;
@@ -105,133 +113,133 @@ text {
 
 /* Inside Session dropdown button */
 cellview {
-    color: #c7d5e8;
+    color: #f5f5f5;
     font-size: 14px;
 }
 
-/* Dropdown arrows (nie pokazuja sie te strzałki) */
+/* Dropdown arrows */
 arrow {
-    color: #c7d5e8;
+    color: #fff;
     min-width: 16px;
     min-height: 16px;
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 arrow:hover {
-    color: rgba(74, 123, 200, 1);
+    color: #fff;
     opacity: 1;
 }
 
 /* Edit/toggle buttons (small icon buttons) */
 .toggle {
-    background: rgba(40, 65, 100, 0.6);
-    border: 1.5px solid rgba(74, 123, 200, 0.3);
+    background: rgba(30, 30, 30, 0.7);
+    border: 1.5px solid #333;
     border-radius: 8px;
     padding: 8px;
     margin: 0 36px 4px 4px;
-    color: #c7d5e8;
+    color: #f5f5f5;
     transition: all 0.3s ease;
     box-shadow: 
-        inset 0 1px 0 rgba(199, 213, 232, 0.1),
-        0 2px 6px rgba(0, 0, 0, 0.3);
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .toggle:hover {
-    background: rgba(74, 123, 200, 0.2);
-    border-color: rgba(74, 123, 200, 0.5);
-    color: rgba(74, 123, 200, 1);
+    background: #fff1;
+    border-color: #fff;
+    color: #fff;
     transform: scale(1.05);
     box-shadow: 
-        inset 0 1px 0 rgba(199, 213, 232, 0.15),
-        0 4px 12px rgba(0, 0, 0, 0.4);
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Cancel button */
 .text-button {
     background: transparent;
-    color: rgba(168, 193, 224, 0.8);
-    border: 1.5px solid rgba(74, 123, 200, 0.2);
+    color: #e0e0e0;
+    border: 1.5px solid #333;
     border-radius: 8px;
     padding: 12px 24px;
     margin: 8px 2px 8px 4px;
     transition: all 0.3s ease;
     box-shadow: 
-        inset 0 1px 0 rgba(199, 213, 232, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
         0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .text-button:hover {
-    background: rgba(74, 123, 200, 0.1);
-    border-color: rgba(74, 123, 200, 0.4);
-    color: #c7d5e8;
+    background: #fff1;
+    border-color: #fff;
+    color: #fff;
     transform: scale(1.05);
     box-shadow: 
-        inset 0 1px 0 rgba(199, 213, 232, 0.15),
-        0 4px 12px rgba(0, 0, 0, 0.4);
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Login button */
 .suggested-action {
-    background: rgba(40, 65, 100, 0.6);
-    border: 1.5px solid rgba(74, 123, 200, 0.3);
-    color: rgba(74, 123, 200, 0.9);
+    background: rgba(30, 30, 30, 0.7);
+    border: 1.5px solid #333;
+    color: #fff;
     border-radius: 8px;
     padding: 12px 24px;
     margin: 8px 36px 8px 2px;
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 
-        inset 0 1px 0 rgba(199, 213, 232, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
         0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .suggested-action:hover {
-    background: rgba(74, 123, 200, 0.2);
-    border-color: rgba(74, 123, 200, 0.5);
-    color: rgba(74, 123, 200, 1);
+    background: #fff1;
+    border-color: #fff;
+    color: #fff;
     transform: scale(1.05);
     box-shadow: 
-        inset 0 1px 0 rgba(199, 213, 232, 0.15),
-        0 4px 12px rgba(0, 0, 0, 0.4);
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .suggested-action:active {
     transform: translateY(0);
     box-shadow: 
-        0 4px 12px rgba(74, 123, 200, 0.3),
+        0 4px 12px #fff2,
         inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Power buttons (Reboot, Power Off) */
 .destructive-action {
-    background: rgba(180, 50, 50, 0.6);
-    border: 1.5px solid rgba(255, 0, 0, 0.6);
-    color: rgba(74, 123, 200, 0.9);
+    background: rgba(30, 30, 30, 0.7);
+    border: 1.5px solid #333;
+    color: #fff;
     border-radius: 8px;
     padding: 12px 24px;
     margin: 4px;
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 
-        0 4px 12px rgba(180, 50, 50, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        0 4px 12px #000a,
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 .destructive-action:hover {
-    background: rgba(220, 0, 0, 0.8);
-    border: 1.5px solid rgba(255, 0, 0, 0.8);
-    color: rgba(74, 123, 200, 0.9);
+    background: #fff1;
+    border: 1.5px solid #ff0000;
+    color: #fff;
     transform: translateY(-4px);
     box-shadow: 
-        0 6px 16px rgba(180, 50, 50, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        0 6px 16px #000c,
+        inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 tooltip {
-    background: rgba(15, 26, 45, 0.95);
-    color: rgba(74, 123, 200, 0.9);
-    border: 1.5px solid rgba(74, 123, 200, 0.4);
+    background: rgba(10, 10, 10, 0.98);
+    color: #fff;
+    border: 1.5px solid #222;
     border-radius: 8px;
     padding: 8px;
 }
