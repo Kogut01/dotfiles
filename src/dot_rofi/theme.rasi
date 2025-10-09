@@ -1,16 +1,13 @@
 * {
     font: "JetBrains Nerd Font 11";
-    bg0: #0f1929;
-    bg1: #1a2740;
-    bg2: #243447;
-    fg0: #c7d5e8;
-    fg1: #a8c1e0;
-    fg2: #7a93b8;
-    water: #4a7bc8;
-    sky: #6b93d6;
-    moon: #e8f2ff;
+    bg0: #101010;
+    bg1: #181818;
+    bg2: #232323;
+    fg0: #f5f5f5;
+    fg1: #cccccc;
+    fg2: #888888;
+    accent: #ffffff;
     background-color: transparent;
-    text-color: @fg0;
     padding: 0;
     spacing: 0;
     margin: 0;
@@ -21,10 +18,11 @@ window {
     width: 450px;
     background-color: @bg0;
     border: 2px;
-    border-color: #1c1c1c;
+    border-color: #222222;
     border-radius: 16px;
     padding: 8px;
     children: [ inputbar, listview ];
+
 }
 
 inputbar {
@@ -38,22 +36,23 @@ icon-search {
     expand: false;
     filename: "search-symbolic";
     size: 18px;
-    color: @water;
+    color: @accent;
 }
 
 entry {
     placeholder: "Szukaj aplikacji...";
     placeholder-color: @fg2;
-    text-color: @moon;
+    text-color: @accent;
     background-color: @bg2;
     border: 1px;
-    border-color: #2a2a2a;
+    border-color: #333333;
     border-radius: 8px;
     padding: 10px 14px;
 }
 
 listview {
     lines: 8;
+    fixed-height: false;
     scrollbar: true;
     background-color: @bg0;
 }
@@ -62,29 +61,31 @@ element {
     padding: 14px 14px;
     spacing: 16px;
     background-color: @bg0;
-    text-color: @fg0;
     margin: 0 20px 0 20px;
 }
 
+element-text {
+    text-color: @fg2;
+}
+
 element selected {
-    background-color: @water;
-    text-color: @moon;
+    background-color: @accent;
     border-radius: 8px;
 }
 
 element-icon {
     size: 28px;
-    color: @water;
+    color: @accent;
 }
 
 element selected element-icon {
-    color: @moon;
+    color: @bg0;
 }
 
 scrollbar {
     width: 4px;
-    handle-color: @water;
-    background-color: #2a2a2a;
+    handle-color: @accent;
+    background-color: #333333;
     border-radius: 2px;
     margin: 0 24px 12px 0;
 }
