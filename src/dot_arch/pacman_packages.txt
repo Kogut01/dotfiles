@@ -1,8 +1,11 @@
 bat
 btop
 fastfetch
+ghostty
+git
 neovim
 oh-my-posh
+yay-git
 tree
 zsh
 ranger
