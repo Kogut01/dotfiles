@@ -52,7 +52,10 @@ if [ "$OS" = "Darwin" ]; then
     link_file "$HOME/.dotfiles/src/dot_nvim/lua/config/kogut01.lua" "$HOME/.config/nvim/lua/config/kogut01.lua"
 
     # VsCode
-    xargs -n 1 code --install-extension < "$HOME/.dotfiles/src/dot_vscode/extensions.txt"
+    while read -r ext; do
+      [[ -n "$ext" ]] && code --no-sandbox --force --install-extension "$ext"
+      sleep 0.5
+    done < "$HOME/.dotfiles/src/dot_vscode/extensions.txt"
     link_file "$HOME/.dotfiles/src/dot_vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 
     # Zsh
