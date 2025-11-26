@@ -10,7 +10,6 @@ on:
         types: [opened, reopened]
 
 permissions:
-    statuses: read
     contents: read
     issues: write
     pull-requests: write
