@@ -30,5 +30,7 @@
         "/path/to/file"
     ],
     "workbench.preferredDarkColorTheme": "Default Dark+",
-    "editor.fontFamily": "MesloLGL Nerd Font"
+    "editor.fontFamily": "MesloLGL Nerd Font",
+    "accessibility.signalOptions.volume": 0,
+    "redhat.telemetry.enabled": true
     }
