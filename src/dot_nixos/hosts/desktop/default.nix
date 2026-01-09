@@ -3,12 +3,13 @@
 {
     imports = [
         ./hardware-configuration.nix
-        ../../modules/nvidia.nix
-        ../../modules/greetd.nix
-        ../../modules/services.nix
-        ../../modules/hyprland.nix
-        ../../modules/fonts.nix
-        ../../modules/system.nix
+        ../../modules/system/audio.nix
+        ../../modules/desktop/fonts.nix
+        ../../modules/desktop/gaming.nix
+        ../../modules/desktop/greetd.nix
+        ../../modules/desktop/hyprland.nix
+        ../../modules/hardware/nvidia.nix
+        ../../modules/system/nix-settings.nix
     ];
 
     users.users.kogut01 = {
@@ -23,18 +24,8 @@
     time.timeZone = "Europe/Warsaw";
 
     environment.systemPackages = with pkgs; [
-        rofi
-        nautilus
-        hyprpanel
-        swww
         regreet
-        libnotify
-        grim
-        slurp
-        wl-clipboard
         wget
-        pavucontrol
-        pamixer
         zip
         unzip
         p7zip

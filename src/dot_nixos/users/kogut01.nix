@@ -1,9 +1,12 @@
 { config, pkgs, inputs, ...}:
 
+let
+	dotfilesPath = ../..;
+in
 {
     imports = [
-        ../modules/theme.nix
-        ../modules/zsh.nix
+        ../modules/home/theme.nix
+        ../modules/home/zsh.nix
     ];
 
 	home.username = "kogut01";
@@ -12,6 +15,18 @@
 
 	home.packages = with pkgs; [
 		git
+		rofi
+        nautilus
+        hyprpanel
+        swww
+		protonup-qt
+        gamescope
+        grim
+        slurp
+        wl-clipboard
+        libnotify
+        pavucontrol
+        pamixer
 
 		ghostty
         oh-my-posh
@@ -26,22 +41,18 @@
         discord
         spotify
         brave
-
-		protonup-qt
-        gamescope
 	];
 
-	home.file.".config/hypr/hyprland".source = ../../dot_hyprland/hyprland;
-	home.file.".config/hypr/hyprland.conf".source = ../../dot_hyprland/hyprland.conf;
-	home.file.".config/hyprpanel".source = ../../dot_hyprpanel;
-	home.file.".config/rofi".source = ../../dot_rofi;
+	home.file.".config/hypr/hyprland".source = "${dotfilesPath}/dot_hyprland/hyprland";
+	home.file.".config/hypr/hyprland.conf".source = "${dotfilesPath}/dot_hyprland/hyprland.conf";
+	home.file.".config/hyprpanel".source = "${dotfilesPath}/dot_hyprpanel";
+	home.file.".config/rofi".source = "${dotfilesPath}/dot_rofi";
 
-	home.file.".config/ghostty".source = ../../dot_ghostty;
-	home.file.".config/nvim".source = ../../dot_nvim;
-	home.file.".config/git/ignore".source = ../../dot_git/ignore;
-	home.file.".gitconfig".source = ../../dot_git/.gitconfig;
-	home.file.".config/bat".source = ../../dot_bat;
-	home.file.".config/btop".source = ../../dot_btop;
-	home.file.".config/fastfetch".source = ../../dot_fastfetch;
-
+	home.file.".config/ghostty".source = "${dotfilesPath}/dot_ghostty";
+	home.file.".config/nvim".source = "${dotfilesPath}/dot_nvim";
+	home.file.".config/git/ignore".source = "${dotfilesPath}/dot_git/ignore";
+	home.file.".gitconfig".source = "${dotfilesPath}/dot_git/.gitconfig";
+	home.file.".config/bat".source = "${dotfilesPath}/dot_bat";
+	home.file.".config/btop".source = "${dotfilesPath}/dot_btop";
+	home.file.".config/fastfetch".source = "${dotfilesPath}/dot_fastfetch";
 }
