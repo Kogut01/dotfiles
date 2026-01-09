@@ -24,8 +24,9 @@
     time.timeZone = "Europe/Warsaw";
 
     environment.systemPackages = with pkgs; [
-        regreet
+        curl
         wget
+        regreet
         zip
         unzip
         p7zip
