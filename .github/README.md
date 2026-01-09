@@ -18,6 +18,7 @@ My personal dotfiles repository. It contains configuration files for various app
 | 🐙 `git`           | [[dot_git]](./src/dot_git/)                |
 | 📝 `nvim`          | [[dot_nvim]](./src/dot_nvim/)              |
 | 🐚 `zsh`           | [[dot_zsh]](./src/dot_zsh/)                |
+| 🇻 `vscode`        | [[dot_vscode]](./src/dot_vscode/)          |
 
 
 </div>
@@ -36,17 +37,16 @@ My personal dotfiles repository. It contains configuration files for various app
 
 <br>
 
-### ↳ 🐧 Arch 
+### ↳ ❄️ NixOS 
  
 <div align="center">
 
 |                       |                                                   |
 | --------------------- | ------------------------------------------------- |
-| 📦 `pacman + yay`     | [[dot_arch]](./src/dot_arch/)                     |
+| ❄️ `nixos`            | [[dot_nixos]](./src/dot_nixos/)                   |
 | 👋 `greetd + regreet` | [[dot_greetd_regreet]](./src/dot_greetd_regreet/) |
 | 🪟 `hyprland`         | [[dot_hyprland]](./src/dot_hyprland/)             |
 | 🗻 `hyprpanel`        | [[dot_hyprpanel]](./src/dot_hyprpanel/)           |
-| 🖼️ `hyprpaper`        | [[dot_hyprpaper]](./src/dot_hyprpaper/)           |
 | 🔍 `rofi`             | [[dot_rofi]](./src/dot_rofi/)                     |
 
 </div>
