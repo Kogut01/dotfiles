@@ -1,17 +1,125 @@
-## {{{1 os
+# ------------------------------------------
+# 1. System Files and OS Artifacts
+# ------------------------------------------
+# macOS
 .DS_Store
-## }}}1
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.Trash/
+.CFUserTextEncoding
+.DocumentRevisions-V100
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.*
 
-## {{{1 ide
-.idea
-## }}}1
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.cab
+*.lnk
+Desktop.ini
+$RECYCLE.BIN/
 
-## {{{1 archives
+# Linux
+.directory
+.Trash-*
+.fuse_hidden*
+.Xauthority
+
+# ------------------------------------------
+# 2. History Files and Shell Artifacts
+# ------------------------------------------
+.bash_history
+.zsh_history
+.python_history
+.node_repl_history
+.irb_history
+.psql_history
+.mysql_history
+.lesshst
+.wget-hsts
+.sqlite_history
+.viminfo
+
+# ------------------------------------------
+# 3. Security-Sensitive Files and Credentials
+# ------------------------------------------
+.ssh/*
+.gnupg/
+.aws/
+.azure/
+.kube/config
+*.pem
+*.key
+.netrc
+.npmrc
+.env
+.env.*
+.docker/config.json
+.gcloud/
+.config/gh/
+*.p12
+*.pfx
+
+# ------------------------------------------
+# 4. Code Editor and IDE Files
+# ------------------------------------------
+# Vim
+*.swp
+*.swo
+.netrwhist
+*~
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/keybindings.json
+
+# JetBrains
+.idea/
+*.iml
+
+# ------------------------------------------
+# 5. Cache, logs and Dependency Directories
+# ------------------------------------------
+.cache/
+node_modules/
+.npm/
+.yarn/
+.nvm/
+.gem/
+.cargo/
+.rustup/
+.bundle/
+.local/share/
+.local/state/
+vendor/
+*.log
+
+# ------------------------------------------
+# 6. Temporary and Backup Files
+# ------------------------------------------
+*.bak
+*.tmp
+*.temp
+*.dockerfile.bak
+
+# ------------------------------------------
+# 7. Archive and Compressed Files
+# ------------------------------------------
 *.7z
 *.bz2
 *.bzip
 *.bzip2
-*.cab
 *.gz
 *.gzip
 *.jar
@@ -22,10 +130,8 @@
 *.xar
 *.xz
 *.zip
-
 *.iso
 *.dmg
-
 *.deb
 *.egg
 *.gem
@@ -35,4 +141,3 @@
 *.rpm
 *.txz
 *.xpi
-## }}}1
