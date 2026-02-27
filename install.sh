@@ -12,7 +12,8 @@ link_file() {
 }
 
 install_brewfile() {
-  echo "\nInstaluję pakiety z Brewfile..."
+  echo ""
+  echo "Instaluję pakiety z Brewfile..."
   brew bundle --file="$DOTFILES/src/dot_brew/Brewfile"
 }
 
@@ -22,7 +23,8 @@ if [ "$OS" = "Darwin" ]; then
 
     read -r response
     if [ "$response" != "y" ]; then
-        echo "\nInstalacja anulowana. Do zobaczenia!"
+        echo ""
+        echo "Instalacja anulowana. Do zobaczenia!"
         exit 1
     fi
 
@@ -62,7 +64,8 @@ if [ "$OS" = "Darwin" ]; then
     done < "$DOTFILES/src/dot_vscode/extensions.txt"
     link_file "$DOTFILES/src/dot_vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 
-    echo "\nInstalacja zakończona! Do zobaczenia!"
+    echo ""
+    echo "Instalacja zakończona! Do zobaczenia!"
 
 else
     echo "Implementacja dla systemu: $OS wkrótce..."
