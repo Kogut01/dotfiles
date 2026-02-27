@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="./data/dot_avatar/rooster.png" width="120" />
+<img src="../data/dot_avatar/rooster.png" width="80" />
 
 # `.dotfiles`
 
-Konfiguracja systemów — zbudowana na **Nix Flakes** i **Home Manager**.
+Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i ulubionych narzędzi.
 
 [![NixOS](https://img.shields.io/badge/NixOS-unstable-5277C3?style=flat-square&logo=nixos&logoColor=white)](https://nixos.org)
 [![macOS](https://img.shields.io/badge/macOS-supported-000000?style=flat-square&logo=apple&logoColor=white)](#-macos)
@@ -31,16 +31,6 @@ Konfiguracja systemów — zbudowana na **Nix Flakes** i **Home Manager**.
 
 </div>
 
-### ↳ 🍎 macOS
-
-<div align="center">
-
-| Tool | Config |
-| :--- | :--- |
-| 🍺 `homebrew` | [dot_brew](../src/dot_brew/) |
-
-</div>
-
 ### ↳ ❄️ NixOS
 
 <div align="center">
@@ -55,22 +45,23 @@ Konfiguracja systemów — zbudowana na **Nix Flakes** i **Home Manager**.
 
 </div>
 
-<br>
-
-### Structure
-
-```
-src/          # Application configs
-data/         # Assets (avatar, themes, wallpapers)
-flake.nix     # Nix flake entrypoint
-install.sh    # Bootstrap script
-```
-
-<br>
-
-## 📜 Licencja
+### ↳ 🍎 macOS
 
 <div align="center">
+
+| Tool | Config |
+| :--- | :--- |
+| 🍺 `homebrew` | [dot_brew](../src/dot_brew/) |
+
+</div>
+
+<br>
+
+---
+
+<div align="center">
+
+### 📜 Licencja 📜
 
 Projekt jest udostępniany na licencji [MIT](../LICENSE).
 
