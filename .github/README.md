@@ -1,52 +1,79 @@
-
-# dotfiles
-
-My personal dotfiles repository. It contains configuration files for various applications and tools that I use on my systems. The repository is organized into different directories based on the application or tool, making it easy to find and manage specific configurations.
-
-<br>
-
-### ↳ 🌍 Links for all systems
-
 <div align="center">
 
-|                    |                                            |
-| ------------------ | ------------------------------------------ |
-| 🦇 `bat`           | [[dot_bat]](./src/dot_bat/)                |
-| 📈 `btop`          | [[dot_btop]](./src/dot_btop/)              |
-| 🚀 `fastfetch`     | [[dot_fastfetch]](./src/dot_fastfetch/)    |
-| 👻 `ghostty`       | [[dot_ghostty]](./src/dot_ghostty/)        |
-| 🐙 `git`           | [[dot_git]](./src/dot_git/)                |
-| 📝 `nvim`          | [[dot_nvim]](./src/dot_nvim/)              |
-| 🐚 `zsh`           | [[dot_zsh]](./src/dot_zsh/)                |
-| 🇻 `vscode`        | [[dot_vscode]](./src/dot_vscode/)          |
+<img src="./data/dot_avatar/rooster.png" width="120" />
 
+# `.dotfiles`
+
+Konfiguracja systemów — zbudowana na **Nix Flakes** i **Home Manager**.
+
+[![NixOS](https://img.shields.io/badge/NixOS-unstable-5277C3?style=flat-square&logo=nixos&logoColor=white)](https://nixos.org)
+[![macOS](https://img.shields.io/badge/macOS-supported-000000?style=flat-square&logo=apple&logoColor=white)](#-macos)
+[![License](https://img.shields.io/github/license/Kogut01/dotfiles?style=flat-square&color=A3BE8C)](./LICENSE)
 
 </div>
 
 <br>
 
-### ↳ 🍎 MacOS
+### ↳ 🌍 Cross-platform
 
 <div align="center">
 
-|                    |                                            |
-| ------------------ | ------------------------------------------ |
-| 🍺 `brew`          | [[dot_brew]](./src/dot_brew/)              |
+| Tool | Config |
+| :--- | :--- |
+| 🦇 `bat` | [dot_bat](../src/dot_bat/) |
+| 📈 `btop` | [dot_btop](../src/dot_btop/) |
+| 🚀 `fastfetch` | [dot_fastfetch](../src/dot_fastfetch/) |
+| 👻 `ghostty` | [dot_ghostty](../src/dot_ghostty/) |
+| 🐙 `git` | [dot_git](../src/dot_git/) |
+| 📝 `neovim` | [dot_nvim](../src/dot_nvim/) |
+| 🐚 `zsh` | [dot_zsh](../src/dot_zsh/) |
+| 🆚 `vscode` | [dot_vscode](../src/dot_vscode/) |
+
+</div>
+
+### ↳ 🍎 macOS
+
+<div align="center">
+
+| Tool | Config |
+| :--- | :--- |
+| 🍺 `homebrew` | [dot_brew](../src/dot_brew/) |
+
+</div>
+
+### ↳ ❄️ NixOS
+
+<div align="center">
+
+| Tool | Config |
+| :--- | :--- |
+| ❄️ `nixos` | [dot_nixos](../src/dot_nixos/) |
+| 👋 `greetd + regreet` | [dot_greetd_regreet](../src/dot_greetd_regreet/) |
+| 🪟 `hyprland` | [dot_hyprland](../src/dot_hyprland/) |
+| 🗻 `hyprpanel` | [dot_hyprpanel](../src/dot_hyprpanel/) |
+| 🔍 `rofi` | [dot_rofi](../src/dot_rofi/) |
 
 </div>
 
 <br>
 
-### ↳ ❄️ NixOS 
- 
+### Structure
+
+```
+src/          # Application configs
+data/         # Assets (avatar, themes, wallpapers)
+flake.nix     # Nix flake entrypoint
+install.sh    # Bootstrap script
+```
+
+<br>
+
+## 📜 Licencja
+
 <div align="center">
 
-|                       |                                                   |
-| --------------------- | ------------------------------------------------- |
-| ❄️ `nixos`            | [[dot_nixos]](./src/dot_nixos/)                   |
-| 👋 `greetd + regreet` | [[dot_greetd_regreet]](./src/dot_greetd_regreet/) |
-| 🪟 `hyprland`         | [[dot_hyprland]](./src/dot_hyprland/)             |
-| 🗻 `hyprpanel`        | [[dot_hyprpanel]](./src/dot_hyprpanel/)           |
-| 🔍 `rofi`             | [[dot_rofi]](./src/dot_rofi/)                     |
+Projekt jest udostępniany na licencji [MIT](../LICENSE).
+
+Copyright © 2026 [Kogut01](https://github.com/Kogut01)
 
 </div>
