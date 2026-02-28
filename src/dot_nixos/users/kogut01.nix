@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ...}:
+{ config, pkgs, ... }:
 
 let
 	dotfilesPath = ../..;
@@ -19,14 +19,12 @@ in
         nautilus
         hyprpanel
         swww
-		protonup-qt
+		protonup-ng
         gamescope
         grim
         slurp
         wl-clipboard
         libnotify
-        pavucontrol
-        pamixer
 
 		ghostty
         oh-my-posh
@@ -41,7 +39,14 @@ in
         discord
         spotify
         brave
+        heroic
+        prismlauncher
+        lutris
 	];
+
+    home.sessionVariables = {
+        STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\\\${HOME}/.steam/root/compatibilitytools.d";
+    };
 
 	home.file.".config/hypr/hyprland".source = "${dotfilesPath}/dot_hyprland/hyprland";
 	home.file.".config/hypr/hyprland.conf".source = "${dotfilesPath}/dot_hyprland/hyprland.conf";

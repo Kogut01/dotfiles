@@ -19,7 +19,6 @@
 		};
 
 		localVariables = {
-			LANG = "pl_PL.UTF-8";
 			EDITOR = "nvim";
 			TERM = "xterm-256color";
 			COLORTERM = "truecolor";
