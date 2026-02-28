@@ -1,8 +1,14 @@
 { pkgs, ... }:
 
+let
+	cursorTheme = "Dracula-cursors";
+	cursorPackage = pkgs.dracula-theme;
+	cursorSize = 24;
+	gtkTheme = "Dracula";
+in
 {
 	home.packages = [ 
-	  	pkgs.dracula-theme
+	  	cursorPackage
 	  	pkgs.dracula-icon-theme
 	];
 
@@ -10,8 +16,8 @@
 		enable = true;
 	
 		theme = {
-			name = "Dracula";
-			package = pkgs.dracula-theme;
+			name = gtkTheme;
+			package = cursorPackage;
 		};
 
 		iconTheme = {
@@ -20,9 +26,9 @@
 		};
 
 		cursorTheme = {
-			name = "Dracula-Cursors";
-			package = pkgs.dracula-theme;
-			size = 24;
+			name = cursorTheme;
+			package = cursorPackage;
+			size = cursorSize;
 		};
 
 		gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
@@ -30,12 +36,12 @@
 	};
 
 	home.sessionVariables = {
-		GTK_THEME = "Dracula";
-		XCURSOR_THEME = "Dracula-cursors";
-		XCURSOR_SIZE = "24";
+		GTK_THEME = gtkTheme;
+		XCURSOR_THEME = cursorTheme;
+		XCURSOR_SIZE = toString cursorSize;
 	};
 
-	xdg.configFile."gtk-4.0/assets".source = "${pkgs.dracula-theme}/share/themes/Dracula/gtk-4.0/assets";
-	xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.dracula-theme}/share/themes/Dracula/gtk-4.0/gtk.css";
-	xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.dracula-theme}/share/themes/Dracula/gtk-4.0/gtk-dark.css";
+	xdg.configFile."gtk-4.0/assets".source = "${cursorPackage}/share/themes/${gtkTheme}/gtk-4.0/assets";
+	xdg.configFile."gtk-4.0/gtk.css".source = "${cursorPackage}/share/themes/${gtkTheme}/gtk-4.0/gtk.css";
+	xdg.configFile."gtk-4.0/gtk-dark.css".source = "${cursorPackage}/share/themes/${gtkTheme}/gtk-4.0/gtk-dark.css";
 }

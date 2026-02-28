@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ...}:
+{ config, pkgs, ... }:
 
 let
 	dotfilesPath = ../..;
@@ -14,20 +14,21 @@ in
 	home.stateVersion = "25.11";
 
 	home.packages = with pkgs; [
-		git
+		# Desktop environment
 		rofi
         nautilus
         hyprpanel
         swww
-		protonup-qt
-        gamescope
+        hyprpolkitagent
+        playerctl
+        cliphist
+        libnotify
         grim
         slurp
         wl-clipboard
-        libnotify
-        pavucontrol
-        pamixer
 
+		# Terminal & CLI tools
+		git
 		ghostty
         oh-my-posh
         neovim
@@ -37,11 +38,23 @@ in
         btop
         tree
 
+		# Gaming
+		protonup-ng
+        mangohud
+
+		# Apps
 		vscode
         discord
         spotify
         brave
+        heroic
+        prismlauncher
+        lutris
 	];
+
+    home.sessionVariables = {
+        STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\\\${HOME}/.steam/root/compatibilitytools.d";
+    };
 
 	home.file.".config/hypr/hyprland".source = "${dotfilesPath}/dot_hyprland/hyprland";
 	home.file.".config/hypr/hyprland.conf".source = "${dotfilesPath}/dot_hyprland/hyprland.conf";

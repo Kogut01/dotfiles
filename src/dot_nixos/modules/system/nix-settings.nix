@@ -1,15 +1,6 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
-    networking.networkmanager.enable = true;
-    
-    virtualisation.docker = {
-        enable = true;
-        enableOnBoot = true;
-    };
-
-    programs.zsh.enable = true;
-
     nix.gc = {
         automatic = true;
         dates = "weekly";
@@ -26,15 +17,5 @@
         builders-use-substitutes = true;
     };
 
-    programs.nix-ld.enable = true;
-    programs.nix-ld.libraries = with pkgs; [
-        stdenv.cc.cc.lib
-        zlib
-        fuse3
-        icu
-        nss
-        openssl
-        curl
-        expat
-    ];
+    programs.zsh.enable = true;
 }
