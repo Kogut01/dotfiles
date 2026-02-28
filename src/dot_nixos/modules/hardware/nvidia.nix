@@ -15,8 +15,8 @@
         powerManagement.enable = false;
         powerManagement.finegrained = false;
         open = false;
-        nvidiaSettings = true;
-        package = config.boot.kernelPackages.nvidiaPackages.production;
+        nvidiaSettings = false;
+        package = config.boot.kernelPackages.nvidiaPackages.dc_570;
         nvidiaPersistenced = true;
     };
 
@@ -40,5 +40,7 @@
 
         __GL_SHADER_DISK_CACHE = "1";
         __GL_SHADER_DISK_CACHE_SKIP_CLEANUP = "1";
+
+        __GL_YIELD = "USLEEP";
     };
 }

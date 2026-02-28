@@ -72,6 +72,7 @@
     };
 
     nixpkgs.config.allowUnfree = true;
+    nixpkgs.config.nvidia.acceptLicense = true;
 
     system.stateVersion = "25.11";
 
