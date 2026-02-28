@@ -12,7 +12,7 @@
 
     hardware.nvidia = {
         modesetting.enable = true;
-        powerManagement.enable = true;
+        powerManagement.enable = false;
         powerManagement.finegrained = false;
         open = false;
         nvidiaSettings = true;
@@ -22,6 +22,7 @@
 
     boot.kernelParams = [
         "nvidia-drm.fbdev=1"
+        "nvidia.NVreg_UsePageAttributeTable=1"
     ];
 
     environment.systemPackages = with pkgs; [

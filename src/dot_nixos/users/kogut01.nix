@@ -14,18 +14,21 @@ in
 	home.stateVersion = "25.11";
 
 	home.packages = with pkgs; [
-		git
+		# Desktop environment
 		rofi
         nautilus
         hyprpanel
         swww
-		protonup-ng
-        gamescope
+        hyprpolkitagent
+        playerctl
+        cliphist
+        libnotify
         grim
         slurp
         wl-clipboard
-        libnotify
 
+		# Terminal & CLI tools
+		git
 		ghostty
         oh-my-posh
         neovim
@@ -35,6 +38,11 @@ in
         btop
         tree
 
+		# Gaming
+		protonup-ng
+        mangohud
+
+		# Apps
 		vscode
         discord
         spotify

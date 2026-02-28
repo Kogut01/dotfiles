@@ -17,7 +17,7 @@
 
     users.users.kogut01 = {
         isNormalUser = true;
-        extraGroups = [ "wheel" "docker"];
+        extraGroups = [ "wheel" "docker" "networkmanager" "video" "input" ];
         shell = pkgs.zsh;
 
         description = "Kogut01";
@@ -51,6 +51,11 @@
     services.gvfs.enable = true;
     services.upower.enable = true;
     services.power-profiles-daemon.enable = true;
+    services.udisks2.enable = true;
+    programs.dconf.enable = true;
+    security.polkit.enable = true;
+    services.gnome.gnome-keyring.enable = true;
+    hardware.enableRedistributableFirmware = true;
 
     xdg.portal = {
         enable = true;
