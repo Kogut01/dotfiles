@@ -4,8 +4,11 @@
 
 [alias]
 	cd = checkout
+	cdb = checkout -b
 	ci = commit
 	ss = status --short
+	cb = branch --show-current
+	pr = pull --rebase
 
 [core]
 	excludesFile = ~/.config/git/ignore
