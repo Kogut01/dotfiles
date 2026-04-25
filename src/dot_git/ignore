@@ -61,6 +61,7 @@ $RECYCLE.BIN/
 .npmrc
 .env
 .env.*
+!.env.example
 .docker/config.json
 .gcloud/
 .config/gh/

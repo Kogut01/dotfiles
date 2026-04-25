@@ -6,7 +6,7 @@
 
 Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i ulubionych narzędzi.
 
-[![NixOS](https://img.shields.io/badge/NixOS-unstable-5277C3?style=flat-square&logo=nixos&logoColor=white)](https://nixos.org)
+[![Linux](https://img.shields.io/badge/Linux-supported-FCC624?style=flat-square&logo=linux&logoColor=black)](#-linux)
 [![macOS](https://img.shields.io/badge/macOS-supported-000000?style=flat-square&logo=apple&logoColor=white)](#-macos)
 [![License](https://img.shields.io/github/license/Kogut01/dotfiles?style=flat-square&color=A3BE8C)](./LICENSE)
 
@@ -31,13 +31,12 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 
 </div>
 
-### ↳ ❄️ NixOS
+### ↳ 🐧 Linux
 
 <div align="center">
 
 | Tool | Config |
 | :--- | :--- |
-| ❄️ `nixos` | [dot_nixos](../src/dot_nixos/) |
 | 👋 `greetd + regreet` | [dot_greetd_regreet](../src/dot_greetd_regreet/) |
 | 🪟 `hyprland` | [dot_hyprland](../src/dot_hyprland/) |
 | 🗻 `hyprpanel` | [dot_hyprpanel](../src/dot_hyprpanel/) |
