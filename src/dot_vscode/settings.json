@@ -29,7 +29,7 @@
     "vscode_vibrancy.imports": [
         "/path/to/file"
     ],
-    "workbench.preferredDarkColorTheme": "Default Dark+",
+    "workbench.preferredDarkColorTheme": "Dark+",
     "editor.fontFamily": "MesloLGL Nerd Font",
     "accessibility.signalOptions.volume": 0,
     "redhat.telemetry.enabled": true
