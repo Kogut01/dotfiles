@@ -31,7 +31,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 
 </div>
 
-### ↳ 🐧 Linux 
+### ↳ 🐧 Linux
 
 <div align="center">
 
