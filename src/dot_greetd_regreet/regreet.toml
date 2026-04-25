@@ -1,14 +1,13 @@
 [background]
-path = "/usr/share/backgrounds/greeter.png"
+path = "/etc/greetd/greeter.png"
 fit = "Cover"
-
-[env]
-ENV_VARIABLE = "value"
 
 [GTK]
 application_prefer_dark_theme = true
 font_name = "JetBrainsMono Nerd Font 12"
 css_file_path = "/etc/greetd/regreet.css"
+cursor_theme_name = "Dracula-cursors"
+icon_theme_name = "Dracula"
 
 [commands]
 reboot = ["systemctl", "reboot"]
