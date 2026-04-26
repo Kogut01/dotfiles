@@ -5,7 +5,7 @@ float getSdfRectangle(in vec2 p, in vec2 xy, in vec2 b)
 }
 
 // Based on Inigo Quilez's 2D distance functions article: https://iquilezles.org/articles/distfunctions2d/
-// Potencially optimized by eliminating conditionals and loops to enhance performance and reduce branching
+// Potentially optimized by eliminating conditionals and loops to enhance performance and reduce branching
 
 float seg(in vec2 p, in vec2 a, in vec2 b, inout float s, float d) {
     vec2 e = b - a;
