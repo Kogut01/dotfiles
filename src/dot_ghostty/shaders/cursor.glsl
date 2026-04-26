@@ -46,8 +46,8 @@ float antialising(float distance) {
 
 float determineStartVertexFactor(vec2 a, vec2 b) {
     // Conditions using step
-    float condition1 = step(b.x, a.x) * step(a.y, b.y); // a.x < b.x && a.y > b.y
-    float condition2 = step(a.x, b.x) * step(b.y, a.y); // a.x > b.x && a.y < b.y
+    float condition1 = step(b.x, a.x) * step(a.y, b.y); // a.x >= b.x && a.y <= b.y
+    float condition2 = step(a.x, b.x) * step(b.y, a.y); // a.x <= b.x && a.y >= b.y
 
     // If neither condition is met, return 1 (else case)
     return 1.0 - max(condition1, condition2);
