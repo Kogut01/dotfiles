@@ -36,3 +36,4 @@ font-size = 12
 font-family = MesloLGL Nerd Font
 mouse-hide-while-typing = true
 macos-icon = xray
+custom-shader = ./shaders/cursor.glsl
