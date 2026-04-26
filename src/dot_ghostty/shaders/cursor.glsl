@@ -71,7 +71,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
     vec2 offsetFactor = vec2(-.5, 0.5);
 
     // Normalization for cursor position and size;
-    // cursor xy has the postion in a space of -1 to 1;
+    // cursor xy has the position in a space of -1 to 1;
     // zw has the width and height
     vec4 currentCursor = vec4(norm(iCurrentCursor.xy, 1.), norm(iCurrentCursor.zw, 0.));
     vec4 previousCursor = vec4(norm(iPreviousCursor.xy, 1.), norm(iPreviousCursor.zw, 0.));
