@@ -34,4 +34,4 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
             config-name: config.release-draft.yml
-            disable-autolabeler: true
+            commitish: ${{ github.base_ref }}

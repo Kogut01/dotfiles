@@ -4,20 +4,15 @@ export EDITOR="nvim"
 export TERM="xterm-256color"
 export COLORTERM="truecolor"
 export PATH="$HOME/.local/bin:$PATH"
+export ZSH="$HOME/.oh-my-zsh"
 
 
 # -------- Ghostty --------
 export TERM_PROGRAM="ghostty"
 
 
-# ------- OH-MY-ZSH --------
-export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
-
-
 # - Plugins -
 plugins=(
-  git
   sudo
   colored-man-pages
   zsh-autosuggestions
@@ -27,12 +22,12 @@ plugins=(
 
 
 # --------- Colors -----------
-alias grep='grep --color=auto'
+alias grep='grep --color=always'
 
 
 # ------- ALIASY --------
-alias ls='ls --color=auto'
-alias la='ls -laF --color=auto'
+alias ls='ls --color=always'
+alias la='ls -laF --color=always'
   
 alias vi='nvim'
 alias ff='fastfetch'
@@ -40,3 +35,7 @@ alias ff='fastfetch'
 
 # ------------- OH-MY-POSH -------------
 eval "$(oh-my-posh init zsh --config ~/.dotfiles/data/dot_themes/zsh_theme.omp.json)"
+
+
+# ------ OH-MY-ZSH ------
+source $ZSH/oh-my-zsh.sh
