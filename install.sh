@@ -149,7 +149,7 @@ elif [ "$OS" = "Linux" ]; then
 
   # Ghostty
   link_file "$DOTFILES/src/dot_ghostty/config" "$HOME/.config/ghostty/config"
-  link_file "$DOTFILES/src/dot_ghostty/shaders/cursor.glsl" "/etc/ghostty/shaders/cursor.glsl"
+  link_file "$DOTFILES/src/dot_ghostty/shaders/cursor.glsl" "$HOME/.config/ghostty/shaders/cursor.glsl"
 
   # Git
   link_file "$DOTFILES/src/dot_git/ignore" "$HOME/.config/git/ignore"
