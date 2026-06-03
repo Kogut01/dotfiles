@@ -32,5 +32,17 @@
     "workbench.preferredDarkColorTheme": "Dark+",
     "editor.fontFamily": "MesloLGL Nerd Font",
     "accessibility.signalOptions.volume": 0,
-    "redhat.telemetry.enabled": true
+    "redhat.telemetry.enabled": true,
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "docker-desktop"
+    ],
+    "terminal.integrated.stickyScroll.enabled": false,
+    "explorer.confirmDelete": false
     }

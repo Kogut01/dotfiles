@@ -1,0 +1,52 @@
+name: Dotbot
+run-name: >-
+    ${{ 
+        github.event_name == 'pull_request' 
+        && format('Pull Request Automation #{0} -> {1}', github.event.number, github.event.pull_request.title)
+    }}
+
+on:
+    pull_request:
+        types: [opened, synchronize, reopened]
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+    dotbot:
+        name: Checking configuration - ${{ matrix.os }}
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                os:
+                    - ubuntu-latest
+                    - macos-latest
+                include:
+                    - os: ubuntu-latest
+                      dotbot-config: 'dotbot.linux-server.yml'
+                    - os: ubuntu-latest
+                      dotbot-config: 'dotbot.linux-desktop.yml'
+                    - os: macos-latest
+                      dotbot-config: 'dotbot.macos.yml'
+
+        timeout-minutes: 15
+
+        steps:
+        - name: 📥 Git -- Checkout repository
+          uses: actions/checkout@v6
+        
+        - name: 🐍 Python -- Set up
+          uses: actions/setup-python@v4
+          with:
+            python-version: 3.12
+            cache: 'pip'
+
+        - name: 🐍 Python -- Install dependencies
+          uses: py-actions/py-dependency-install@v4
+          with:
+            update-pip: true
+
+        - name: 🤖 Dotbot -- Config Check
+          working-directory: src
+          run: dotbot -c ${{ matrix.dotbot-config }}
