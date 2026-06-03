@@ -8,21 +8,16 @@
 - clean: ['~']
 
 - link:
-    ~/.config/bat/config: src/dot_bat/config
-    ~/.config/btop/btop.conf: src/dot_btop/btop.conf
-    ~/.config/fastfetch/config.jsonc: src/dot_fastfetch/config.jsonc
-    ~/.config/fastfetch/rooster.txt: src/dot_fastfetch/rooster.txt
-    ~/.config/git/ignore: src/dot_git/ignore
-    ~/.gitconfig: src/dot_git/.gitconfig
+    ~/.config/bat: ./dot_bat
+    ~/.config/btop: ./dot_btop
+    ~/.config/fastfetch: ./dot_fastfetch
+    ~/.config/git: ./dot_git
 
 - link:
-    ~/.config/ghostty/config: src/dot_ghostty/config
-    ~/.config/ghostty/shaders/cursor.glsl: src/dot_ghostty/shaders/cursor.glsl
-    ~/.zshrc: src/dot_zsh/.zshrc
-    ~/.config/nvim/init.lua: src/dot_nvim/init.lua
-    ~/.config/nvim/lua/plugins/background.lua: src/dot_nvim/lua/plugins/background.lua
-    ~/.config/nvim/lua/config/lazy.lua: src/dot_nvim/lua/config/lazy.lua
-    ~/.config/nvim/lua/config/kogut01.lua: src/dot_nvim/lua/config/kogut01.lua
+    ~/.config/ghostty: ./dot_ghostty
+    ~/.config/nvim: ./dot_nvim
+    ~/.zshrc: ./dot_zsh/.zshrc
 
-- link:
-    ~/.hushlogin: src/dot_hushlogin/hushlogin
+#
+# - link:
+#     ~/.hushlogin: ./dot_hushlogin/hushlogin

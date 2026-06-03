@@ -8,33 +8,18 @@
 - clean: ['~']
 
 - link:
-    ~/.config/bat/config: src/dot_bat/config
-    ~/.config/btop/btop.conf: src/dot_btop/btop.conf
-    ~/.config/fastfetch/config.jsonc: src/dot_fastfetch/config.jsonc
-    ~/.config/fastfetch/rooster.txt: src/dot_fastfetch/rooster.txt
-    ~/.config/git/ignore: src/dot_git/ignore
-    ~/.gitconfig: src/dot_git/.gitconfig
+    ~/.config/bat: ./dot_bat
+    ~/.config/btop: ./dot_btop
+    ~/.config/fastfetch: ./dot_fastfetch
+    ~/.config/git: ./dot_git
 
 - link:
-    ~/.config/ghostty/config: src/dot_ghostty/config
-    ~/.config/ghostty/shaders/cursor.glsl: src/dot_ghostty/shaders/cursor.glsl
-    ~/.zshrc: src/dot_zsh/.zshrc
-    ~/.config/nvim/init.lua: src/dot_nvim/init.lua
-    ~/.config/nvim/lua/plugins/background.lua: src/dot_nvim/lua/plugins/background.lua
-    ~/.config/nvim/lua/config/lazy.lua: src/dot_nvim/lua/config/lazy.lua
-    ~/.config/nvim/lua/config/kogut01.lua: src/dot_nvim/lua/config/kogut01.lua
+    ~/.config/ghostty: ./dot_ghostty
+    ~/.config/nvim: ./dot_nvim
+    ~/.zshrc: ./dot_zsh/.zshrc
 
 - link:
-    ~/.config/hypr/hyprland.conf: src/dot_hyprland/hyprland.conf
-    ~/.config/hypr/hyprland/00-base.conf: src/dot_hyprland/hyprland/00-base.conf
-    ~/.config/hypr/hyprland/10-outputs.conf: src/dot_hyprland/hyprland/10-outputs.conf
-    ~/.config/hypr/hyprland/20-inputs.conf: src/dot_hyprland/hyprland/20-inputs.conf
-    ~/.config/hypr/hyprland/30-keybinds.conf: src/dot_hyprland/hyprland/30-keybinds.conf
-    ~/.config/hypr/hyprland/40-windows.conf: src/dot_hyprland/hyprland/40-windows.conf
-    ~/.config/hypr/hyprland/50-exec.conf: src/dot_hyprland/hyprland/50-exec.conf
-    ~/.config/hypr/hyprland/60-ui.conf: src/dot_hyprland/hyprland/60-ui.conf
-    ~/.config/hyprpanel/config.json: src/dot_hyprpanel/config.json
-    ~/.config/hyprpanel/modules.json: src/dot_hyprpanel/modules.json
-    ~/.config/hyprpanel/modules.scss: src/dot_hyprpanel/modules.scss
-    ~/.config/rofi/config.rasi: src/dot_rofi/config.rasi
-    ~/.config/rofi/theme.rasi: src/dot_rofi/theme.rasi
+    ~/.config/hypr: ./dot_hyprland
+    ~/.config/hyprpanel: ./dot_hyprpanel
+    ~/.config/rofi: ./dot_rofi
+    # /etc/greetd: ./dot_greetd_regreet
