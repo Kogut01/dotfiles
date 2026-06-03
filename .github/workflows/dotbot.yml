@@ -15,13 +15,10 @@ concurrency:
 
 jobs:
     dotbot:
-        name: Checking configuration - ${{ matrix.os }}
+        name: Checking configuration - ${{ matrix.dotbot-config }}
         runs-on: ${{ matrix.os }}
         strategy:
             matrix:
-                os:
-                    - ubuntu-latest
-                    - macos-latest
                 include:
                     - os: ubuntu-latest
                       dotbot-config: 'dotbot.linux-server.yml'
