@@ -3,15 +3,15 @@
 	email = 131244219+Kogut01@users.noreply.github.com
 
 [alias]
+	branches = branch -va
 	cd = checkout
-	cdb = checkout -b
 	ci = commit
 	ss = status --short
-	cb = branch --show-current
-	pr = pull --rebase
+	lla = log --pretty=format:\"%C(yellow)%h%Creset:%C(red)%d%Creset %s %C(bold magenta)(%cr) [%an]\"
+	ll = lla --abbrev-commit -15
 
 [core]
-	excludesFile = ~/.config/git/ignore
+	excludesFile = ~/.config/git/conf/ignore
 
 [init]
 	defaultBranch = main
