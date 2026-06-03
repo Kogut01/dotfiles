@@ -7,7 +7,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # -------- Ghostty --------
 export TERM_PROGRAM="ghostty"
-
+bindkey -e
 
 # ---------- Plugins ----------
 source ~/.zsh-plugins/znap/znap.zsh
