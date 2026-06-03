@@ -25,6 +25,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 | 🚀 `fastfetch` | [dot_fastfetch](../src/dot_fastfetch/) |
 | 👻 `ghostty` | [dot_ghostty](../src/dot_ghostty/) |
 | 🐙 `git` | [dot_git](../src/dot_git/) |
+| 📦 `lsd` | [dot_lsd](../src/dot_lsd/) |
 | 📝 `neovim` | [dot_nvim](../src/dot_nvim/) |
 | 🐚 `zsh` | [dot_zsh](../src/dot_zsh/) |
 | 🆚 `vscode` | [dot_vscode](../src/dot_vscode/) |
@@ -51,6 +52,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 | Tool | Config |
 | :--- | :--- |
 | 🍺 `homebrew` | [dot_brew](../src/dot_brew/) |
+| 👋 `hushlogin` | [dot_hushlogin](../src/dot_hushlogin/)
 
 </div>
 
