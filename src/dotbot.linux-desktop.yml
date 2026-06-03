@@ -1,0 +1,25 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+    create:
+        mode: 700
+
+- clean: ['~']
+
+- link:
+    ~/.config/bat: ./dot_bat
+    ~/.config/btop: ./dot_btop
+    ~/.config/fastfetch: ./dot_fastfetch
+    ~/.config/git: ./dot_git
+
+- link:
+    ~/.config/ghostty: ./dot_ghostty
+    ~/.config/nvim: ./dot_nvim
+    ~/.zshrc: ./dot_zsh/.zshrc
+
+- link:
+    ~/.config/hypr: ./dot_hyprland
+    ~/.config/hyprpanel: ./dot_hyprpanel
+    ~/.config/rofi: ./dot_rofi
+    # /etc/greetd: ./dot_greetd_regreet
