@@ -21,21 +21,22 @@ plugins=(
 )
 
 
-# --------- Colors -----------
-alias grep='grep --color=always'
-
-
-# ------- ALIASY --------
-alias ls='ls --color=always'
-alias la='ls -laF --color=always'
-  
-alias vi='nvim'
-alias ff='fastfetch'
-
-
 # ------------- OH-MY-POSH -------------
 eval "$(oh-my-posh init zsh --config ~/.dotfiles/data/dot_themes/zsh_theme.omp.json)"
 
 
 # ------ OH-MY-ZSH ------
 source $ZSH/oh-my-zsh.sh
+
+
+# --------- Colors -----------
+alias grep='grep --color=always'
+
+
+# ------- ALIASY --------
+alias ls='lsd -l'
+alias la='lsd -la'
+alias lt='lsd --tree'
+  
+alias vi='nvim'
+alias ff='fastfetch'

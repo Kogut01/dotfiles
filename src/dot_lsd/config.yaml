@@ -1,0 +1,23 @@
+classic: false
+size: short
+date: relative
+
+color:
+  when: auto
+  theme: custom
+
+icons:
+  when: auto
+
+blocks:
+  - permission
+  - user
+  - group
+  - size
+  - date
+  - name
+
+sorting:
+  column: name
+  reverse: false
+  dir-grouping: first
