@@ -13,10 +13,10 @@
     ~/.config/fastfetch/config.jsonc: src/dot_fastfetch/config.jsonc
     ~/.config/fastfetch/rooster.txt: src/dot_fastfetch/rooster.txt
     ~/.config/git/ignore: src/dot_git/ignore
-    ~/.gitconfig: src/dot_git/gitconfig
+    ~/.gitconfig: src/dot_git/.gitconfig
 
 - link:
-    ~/.zshrc: src/dot_zsh/zshrc
+    ~/.zshrc: src/dot_zsh/.zshrc
     ~/.config/nvim/init.lua: src/dot_nvim/init.lua
     ~/.config/nvim/lua/plugins/background.lua: src/dot_nvim/lua/plugins/background.lua
     ~/.config/nvim/lua/config/lazy.lua: src/dot_nvim/lua/config/lazy.lua
