@@ -26,8 +26,9 @@ alias grep='grep --color=always'
 
 
 # ------- ALIASY --------
-alias ls='ls --color=always'
-alias la='ls -laF --color=always'
+alias ls='lsd -l'
+alias la='lsd -la'
+alias lt='lsd --tree'
   
 alias vi='nvim'
 alias ff='fastfetch'

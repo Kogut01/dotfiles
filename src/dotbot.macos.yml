@@ -12,12 +12,12 @@
     ~/.config/btop: ./dot_btop
     ~/.config/fastfetch: ./dot_fastfetch
     ~/.config/git: ./dot_git
+    ~/.config/lsd: ./dot_lsd
 
 - link:
     ~/.config/ghostty: ./dot_ghostty
     ~/.config/nvim: ./dot_nvim
     ~/.zshrc: ./dot_zsh/.zshrc
 
-#
-# - link:
-#     ~/.hushlogin: ./dot_hushlogin/hushlogin
+- link:
+    ~/.hushlogin: ./dot_hushlogin/hushlogin

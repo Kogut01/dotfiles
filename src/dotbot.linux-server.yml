@@ -12,6 +12,7 @@
     ~/.config/btop: ./dot_btop
     ~/.config/fastfetch: ./dot_fastfetch
     ~/.config/git: ./dot_git
+    ~/.config/lsd: ./dot_lsd
 
 - link:
     ~/.config/nvim: ./dot_nvim
