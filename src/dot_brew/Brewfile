@@ -1,18 +1,12 @@
-# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
-# Like neofetch, but much faster because written mostly in C
+brew "docker-compose"
+brew "dotbot"
 brew "fastfetch"
-# Ambitious Vim-fork focused on extensibility and agility
+brew "lsd"
 brew "neovim"
-# Prompt theme engine for any shell
 brew "oh-my-posh"
-# Generic machine emulator and virtualizer
-brew "qemu"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
-# UNIX shell (command interpreter)
-brew "zsh"
-# File browser
 brew "ranger"
+brew "zsh"
+
+brew "qemu"
