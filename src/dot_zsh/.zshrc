@@ -31,6 +31,7 @@ alias lt='lsd --tree'
 alias vi='nvim'
 alias ff='fastfetch'
 
+alias ranger='spf'
 
 # ------------- OH-MY-POSH -------------
 eval "$(oh-my-posh init zsh --config ~/.dotfiles/src/dot_zsh/theme/zsh_theme.omp.json)"
