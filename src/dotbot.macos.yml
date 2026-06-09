@@ -24,6 +24,6 @@
     ~/Library/Application\ Support/Code/User/settings.json: ./dot_vscode/settings.json
 
 - shell:
-    - command: brew bundle --file=./dot_brew/Brewfile
+    - command: 'if [ -z "$GITHUB_ACTIONS" ]; then brew bundle --file=./dot_brew/Brewfile; fi'
       stdout: true
       stderr: true
