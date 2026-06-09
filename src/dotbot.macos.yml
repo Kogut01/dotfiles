@@ -13,11 +13,17 @@
     ~/.config/fastfetch: ./dot_fastfetch
     ~/.config/git: ./dot_git
     ~/.config/lsd: ./dot_lsd
+    ~/.config/nvim: ./dot_nvim
 
 - link:
     ~/.config/ghostty: ./dot_ghostty
-    ~/.config/nvim: ./dot_nvim
     ~/.zshrc: ./dot_zsh/.zshrc
 
 - link:
     ~/.hushlogin: ./dot_hushlogin/hushlogin
+    ~/Library/Application\ Support/Code/User/settings.json: ./dot_vscode/settings.json
+
+- shell:
+    - command: brew bundle --file=~/.dotfiles/src/dot_brew/Brewfile
+      stdout: true
+      stderr: true
