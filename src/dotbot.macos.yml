@@ -24,6 +24,6 @@
     ~/Library/Application\ Support/Code/User/settings.json: ./dot_vscode/settings.json
 
 - shell:
-    - command: brew bundle --file=~/.dotfiles/src/dot_brew/Brewfile
+    - command: brew bundle --file=./dot_brew/Brewfile
       stdout: true
       stderr: true
