@@ -8,12 +8,12 @@
 - clean: ['~']
 
 - link:
-    ~/.config/bat: ./dot_bat
-    ~/.config/btop: ./dot_btop
-    ~/.config/fastfetch: ./dot_fastfetch
-    ~/.config/git: ./dot_git
-    ~/.config/lsd: ./dot_lsd
+    ~/.config/bat: ./src/dot_bat
+    ~/.config/btop: ./src/dot_btop
+    ~/.config/fastfetch: ./src/dot_fastfetch
+    ~/.config/git: ./src/dot_git
+    ~/.config/lsd: ./src/dot_lsd
 
 - link:
-    ~/.config/nvim: ./dot_nvim
-    ~/.zshrc: ./dot_zsh/.zshrc
+    ~/.config/nvim: ./src/dot_nvim
+    ~/.zshrc: ./src/dot_zsh/.zshrc

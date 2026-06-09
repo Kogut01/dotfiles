@@ -8,19 +8,19 @@
 - clean: ['~']
 
 - link:
-    ~/.config/bat: ./dot_bat
-    ~/.config/btop: ./dot_btop
-    ~/.config/fastfetch: ./dot_fastfetch
-    ~/.config/git: ./dot_git
-    ~/.config/lsd: ./dot_lsd
+    ~/.config/bat: ./src/dot_bat
+    ~/.config/btop: ./src/dot_btop
+    ~/.config/fastfetch: ./src/dot_fastfetch
+    ~/.config/git: ./src/dot_git
+    ~/.config/lsd: ./src/dot_lsd
 
 - link:
-    ~/.config/ghostty: ./dot_ghostty
-    ~/.config/nvim: ./dot_nvim
-    ~/.zshrc: ./dot_zsh/.zshrc
+    ~/.config/ghostty: ./src/dot_ghostty
+    ~/.config/nvim: ./src/dot_nvim
+    ~/.zshrc: ./src/dot_zsh/.zshrc
 
 - link:
-    ~/.config/hypr: ./dot_hyprland
-    ~/.config/hyprpanel: ./dot_hyprpanel
-    ~/.config/rofi: ./dot_rofi
-    # /etc/greetd: ./dot_greetd_regreet
+    ~/.config/hypr: ./src/dot_hyprland
+    ~/.config/hyprpanel: ./src/dot_hyprpanel
+    ~/.config/rofi: ./src/dot_rofi
+    # /etc/greetd: ./src/dot_greetd_regreet
