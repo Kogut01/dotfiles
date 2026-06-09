@@ -11,6 +11,9 @@ export TERM_PROGRAM="ghostty"
 bindkey -e
 
 # ---------- Plugins ----------
+[[ -r ~/.zsh-plugins/znap/znap.zsh ]] ||
+    git clone --depth 1 https://github.com/marlonrichert/zsh-snap.git ~/.zsh-plugins/znap
+
 source ~/.zsh-plugins/znap/znap.zsh
 
 znap source zsh-users/zsh-autosuggestions
