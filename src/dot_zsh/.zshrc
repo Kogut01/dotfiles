@@ -3,6 +3,7 @@ export LANG="pl_PL.UTF-8"
 export TERM="xterm-256color"
 export COLORTERM="truecolor"
 export PATH="$HOME/.local/bin:$PATH"
+ulimit -n 2048
 
 
 # -------- Ghostty --------
