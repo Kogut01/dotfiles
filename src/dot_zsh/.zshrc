@@ -3,12 +3,13 @@ export LANG="pl_PL.UTF-8"
 export TERM="xterm-256color"
 export COLORTERM="truecolor"
 export PATH="$HOME/.local/bin:$PATH"
-ulimit -n 2048
+export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
 
 
 # -------- Ghostty --------
 export TERM_PROGRAM="ghostty"
 bindkey -e
+ulimit -n 2048
 
 # ---------- Plugins ----------
 [[ -r ~/.zsh-plugins/znap/znap.zsh ]] ||
