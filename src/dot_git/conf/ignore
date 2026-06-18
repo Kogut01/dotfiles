@@ -1,5 +1,5 @@
 # ------------------------------------------
-# 1. System Files and OS Artifacts
+# 0. System Files and OS Artifacts
 # ------------------------------------------
 # macOS
 .DS_Store
@@ -33,7 +33,7 @@ $RECYCLE.BIN/
 .Xauthority
 
 # ------------------------------------------
-# 2. History Files and Shell Artifacts
+# 1. History Files and Shell Artifacts
 # ------------------------------------------
 .bash_history
 .zsh_history
@@ -48,7 +48,7 @@ $RECYCLE.BIN/
 .viminfo
 
 # ------------------------------------------
-# 3. Security-Sensitive Files and Credentials
+# 2. Security-Sensitive Files and Credentials
 # ------------------------------------------
 .ssh/*
 .gnupg/
@@ -69,7 +69,7 @@ $RECYCLE.BIN/
 *.pfx
 
 # ------------------------------------------
-# 4. Code Editor and IDE Files
+# 3. Code Editor and IDE Files
 # ------------------------------------------
 # Vim
 *.swp
@@ -90,7 +90,7 @@ $RECYCLE.BIN/
 *.iml
 
 # ------------------------------------------
-# 5. Cache, logs and Dependency Directories
+# 4. Cache, logs and Dependency Directories
 # ------------------------------------------
 .cache/
 node_modules/
@@ -107,7 +107,7 @@ vendor/
 *.log
 
 # ------------------------------------------
-# 6. Temporary and Backup Files
+# 5. Temporary and Backup Files
 # ------------------------------------------
 *.bak
 *.tmp
@@ -115,7 +115,7 @@ vendor/
 *.dockerfile.bak
 
 # ------------------------------------------
-# 7. Archive and Compressed Files
+# 6. Archive and Compressed Files
 # ------------------------------------------
 *.7z
 *.bz2

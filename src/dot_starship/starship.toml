@@ -1,0 +1,80 @@
+# --------------------------
+# 0. Starship Configuration
+# --------------------------
+format = """
+$time\
+$shell\
+$git_branch\
+$git_status\
+$fill\
+$hostname\
+$docker_context\
+$kubernetes\
+$python\
+$nodejs\
+$golang\
+$line_break\
+$directory\
+$line_break\
+$character\
+"""
+
+[fill]
+symbol = " "
+
+
+# --------------
+# 1. First line
+# --------------
+[time]
+disabled = false
+time_format = "%H:%M"
+format = "[\\[$time\\]]($style) "
+style = "yellow"
+
+[shell]
+disabled = false
+format = "[  $indicator]($style) "
+style = "red"
+
+[git_branch]
+symbol = " ($style)"
+format = "[$symbol$branch ]($style)"
+style = "green"
+
+[git_status]
+format = "([$all_status$ahead_behind]($style))"
+style = "yellow"
+
+[docker_context]
+format = "[$symbol$context]($style)"
+
+[kubernetes]
+format = "[$symbol$context]($style)"
+
+[python]
+format = "[$symbol$version( \\($virtualenv\\))]($style)"
+
+[nodejs]
+format = "[$symbol$version]($style)"
+
+[golang]
+format = "[$symbol$version]($style)"
+
+
+# ---------------
+# 2. Second line
+# ---------------
+[directory]
+format = "[  $path]($style)"
+truncate_to_repo = false
+truncation_length = 0
+style = "blue"
+
+
+# --------------
+# 3. Third line
+# --------------
+[character]
+success_symbol = "[❯](bold red)"
+error_symbol = "[❯](bold red)"

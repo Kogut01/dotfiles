@@ -17,3 +17,4 @@
 - link:
     ~/.config/nvim: ./dot_nvim
     ~/.zshrc: ./dot_zsh/.zshrc
+    ~/.config/starship.toml: ./dot_starship/starship.toml

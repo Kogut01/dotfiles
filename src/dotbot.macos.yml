@@ -18,6 +18,7 @@
 - link:
     ~/.config/ghostty: ./dot_ghostty
     ~/.zshrc: ./dot_zsh/.zshrc
+    ~/.config/starship.toml: ./dot_starship/starship.toml
 
 - link:
     ~/.hushlogin: ./dot_hushlogin/hushlogin

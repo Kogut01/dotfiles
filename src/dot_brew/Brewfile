@@ -5,7 +5,7 @@ brew "dotbot"
 brew "fastfetch"
 brew "lsd"
 brew "neovim"
-brew "oh-my-posh"
+brew "starship"
 brew "superfile"
 brew "zsh"
 
