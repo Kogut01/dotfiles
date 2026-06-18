@@ -28,6 +28,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 | 📦 `lsd` | [dot_lsd](../src/dot_lsd/) |
 | 📝 `neovim` | [dot_nvim](../src/dot_nvim/) |
 | 🐚 `zsh` | [dot_zsh](../src/dot_zsh/) |
+| 🌟 `starship` | [dot_starship](../src/dot_starship/) |
 | 🆚 `vscode` | [dot_vscode](../src/dot_vscode/) |
 
 </div>
@@ -52,7 +53,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 | Tool | Config |
 | :--- | :--- |
 | 🍺 `homebrew` | [dot_brew](../src/dot_brew/) |
-| 👋 `hushlogin` | [dot_hushlogin](../src/dot_hushlogin/)
+| 👋 `hushlogin` | [dot_hushlogin](../src/dot_hushlogin/) |
 
 </div>
 

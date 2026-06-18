@@ -13,11 +13,12 @@
     ~/.config/fastfetch: ./dot_fastfetch
     ~/.config/git: ./dot_git
     ~/.config/lsd: ./dot_lsd
+    ~/.config/nvim: ./dot_nvim
 
 - link:
     ~/.config/ghostty: ./dot_ghostty
-    ~/.config/nvim: ./dot_nvim
     ~/.zshrc: ./dot_zsh/.zshrc
+    ~/.config/starship.toml: ./dot_starship/starship.toml
 
 - link:
     ~/.config/hypr: ./dot_hyprland
