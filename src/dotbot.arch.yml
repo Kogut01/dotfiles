@@ -23,5 +23,5 @@
     ~/.config/hypr: ./dot_hyprland
     ~/.config/hyprpanel: ./dot_hyprpanel
     ~/.config/rofi: ./dot_rofi
-    ~/.config/Code/User/settings.json: ./dot_vscode/settings.json
+    ~/.config/zed/settings.json: ./dot_zed/settings.json
     # /etc/greetd: ./dot_greetd_regreet
