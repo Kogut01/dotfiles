@@ -74,8 +74,8 @@ format = "[$symbol$version]($style)"
 
 [hostname]
 disabled = false
-format = "[$ssh_symbol]($style)"
-ssh_symbol = " "
+format = "[ $hostname $ssh_symbol]($style)"
+ssh_symbol = " "
 style = "green"
 
 [sudo]
