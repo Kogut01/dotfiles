@@ -9,7 +9,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 [![Linux](https://img.shields.io/badge/Linux-supported-FCC624?style=flat-square&logo=linux&logoColor=black)](#-linux)
 [![macOS](https://img.shields.io/badge/macOS-supported-000000?style=flat-square&logo=apple&logoColor=white)](#-macos)
 [![License](https://img.shields.io/github/license/Kogut01/dotfiles?style=flat-square&color=A3BE8C)](./LICENSE)
-[![Github CI](https://img.shields.io/github/actions/workflow/status/Kogut01/dotfiles/ci.yml?style=flat-square&color=A3BE8C&label=CI)](https://github.com/Kogut01/dotfiles/actions/workflows/ci.yml)
+[![Github CI](https://img.shields.io/github/actions/workflow/status/Kogut01/dotfiles/ci.yml?style=flat-square&color=A3BE8C&label=CI)](https://github.com/Kogut01/dotfiles/actions/workflows/dotbot.yml)
 
 </div>
 
