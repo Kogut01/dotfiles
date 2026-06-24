@@ -1,0 +1,61 @@
+{
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false
+  },
+  "indent_guides": {
+    "coloring": "indent_aware"
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gemini-3.1-pro-preview",
+      "enable_thinking": true,
+      "effort": "high"
+    },
+    "dock": "right"
+  },
+  "edit_predictions": {
+    "provider": "copilot"
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "cursor_shape": "bar",
+  "restore_on_startup": "last_workspace",
+  "ensure_final_newline_on_save": false,
+  "terminal": {
+    "font_family": "MesloLGL Nerd Font",
+    "show_count_badge": false
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "vim_mode": false,
+  "base_keymap": "JetBrains",
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark Pro"
+  },
+  "auto_install_extensions": {
+    "dockerfile": true,
+    "glsl": true,
+    "html": true,
+    "lua": true,
+    "material-icon-theme": true,
+    "nix": true,
+    "one-dark-pro": true,
+    "toml": true,
+    "xml": true,
+    "docker-compose": true
+  }
+}
