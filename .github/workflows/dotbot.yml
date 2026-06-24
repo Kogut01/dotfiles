@@ -21,9 +21,9 @@ jobs:
             matrix:
                 include:
                     - os: ubuntu-latest
-                      dotbot-config: 'dotbot.linux-server.yml'
+                      dotbot-config: 'dotbot.arch.yml'
                     - os: ubuntu-latest
-                      dotbot-config: 'dotbot.linux-desktop.yml'
+                      dotbot-config: 'dotbot.debian.yml'
                     - os: macos-latest
                       dotbot-config: 'dotbot.macos.yml'
 
