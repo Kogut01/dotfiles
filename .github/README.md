@@ -29,6 +29,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 | 📝 `neovim` | [dot_nvim](../src/dot_nvim/) |
 | 🐚 `zsh` | [dot_zsh](../src/dot_zsh/) |
 | 🌟 `starship` | [dot_starship](../src/dot_starship/) |
+| 🦸 `superfile` | [dot_superfile](../src/dot_superfile/) |
 | ⬛️ `zed` | [dot_zed](../src/dot_zed/) |
 
 </div>

@@ -1,0 +1,8 @@
+# -----------
+# 0. General
+# -----------
+theme = 'catppuccin'
+editor = "nvim"
+default_sort_type = 3
+ignore_missing_fields = true
+transparent_background = true

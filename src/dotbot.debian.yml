@@ -8,6 +8,7 @@
 - clean: ["~"]
 
 - link:
+    ~/.config/superfile/config.toml: ./dot_superfile/config.toml
     ~/.config/bat: ./dot_bat
     ~/.config/btop: ./dot_btop
     ~/.config/fastfetch: ./dot_fastfetch
