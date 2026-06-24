@@ -17,8 +17,9 @@
 
 - link:
     ~/.config/ghostty: ./dot_ghostty
+    ~/.config/starship: ./dot_starship
+    ~/.config/zsh: ./dot_zsh/conf
     ~/.zshrc: ./dot_zsh/.zshrc
-    ~/.config/starship.toml: ./dot_starship/starship.toml
 
 - link:
     ~/.config/hypr: ./dot_hyprland
