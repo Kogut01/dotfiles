@@ -19,3 +19,13 @@
     ~/.config/starship: ./dot_starship
     ~/.config/zsh: ./dot_zsh/conf
     ~/.zshrc: ./dot_zsh/.zshrc
+
+- shell:
+    - command: 'if [ -z "$GITHUB_ACTIONS" ]; then brew bundle --file=./dot_brew/brewfile_debian; fi'
+      stdout: true
+      stderr: true
+
+- shell:
+    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then chsh -s "$(which zsh)"; fi'
+      stdout: true
+      stderr: true

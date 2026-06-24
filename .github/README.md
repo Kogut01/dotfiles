@@ -4,7 +4,8 @@
 
 # `.dotfiles`
 
-Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i ulubionych narzędzi.
+Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i ulubionych narzędzi -->
+[Quickstart](../data/dot_notes/quickstart.md).
 
 [![Linux](https://img.shields.io/badge/Linux-supported-FCC624?style=flat-square&logo=linux&logoColor=black)](#-linux)
 [![macOS](https://img.shields.io/badge/macOS-supported-000000?style=flat-square&logo=apple&logoColor=white)](#-macos)
