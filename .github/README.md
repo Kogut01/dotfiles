@@ -4,8 +4,7 @@
 
 # `.dotfiles`
 
-Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i ulubionych narzędzi -->
-[Quickstart](../data/dot_notes/quickstart.md).
+Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i ulubionych narzędzi [Quickstart](../data/dot_notes/quickstart.md).
 
 [![Linux](https://img.shields.io/badge/Linux-supported-FCC624?style=flat-square&logo=linux&logoColor=black)](#-linux)
 [![macOS](https://img.shields.io/badge/macOS-supported-000000?style=flat-square&logo=apple&logoColor=white)](#-macos)
@@ -30,7 +29,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 | 📝 `neovim` | [dot_nvim](../src/dot_nvim/) |
 | 🐚 `zsh` | [dot_zsh](../src/dot_zsh/) |
 | 🌟 `starship` | [dot_starship](../src/dot_starship/) |
-| 🆚 `vscode` | [dot_vscode](../src/dot_vscode/) |
+| ⬛️ `zed` | [dot_zed](../src/dot_zed/) |
 
 </div>
 

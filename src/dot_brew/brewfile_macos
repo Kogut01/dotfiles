@@ -11,7 +11,7 @@ brew "zsh"
 
 cask "utm"
 cask "ghostty"
-cask "visual-studio-code"
 cask "bitwarden"
 cask "raycast"
 cask "arc"
+cask "zed"

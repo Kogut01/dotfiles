@@ -1,11 +1,11 @@
 - defaults:
     link:
-        create: true
-        relink: true
+      create: true
+      relink: true
     create:
-        mode: 0700
+      mode: 0700
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.config/bat: ./dot_bat
@@ -14,16 +14,14 @@
     ~/.config/git: ./dot_git
     ~/.config/lsd: ./dot_lsd
     ~/.config/nvim: ./dot_nvim
-
-- link:
-    ~/.config/ghostty: ./dot_ghostty
     ~/.config/starship: ./dot_starship
     ~/.config/zsh: ./dot_zsh/conf
     ~/.zshrc: ./dot_zsh/.zshrc
 
 - link:
+    ~/.config/ghostty: ./dot_ghostty
     ~/.config/hypr: ./dot_hyprland
     ~/.config/hyprpanel: ./dot_hyprpanel
     ~/.config/rofi: ./dot_rofi
-    ~/.config/Code/User/settings.json: ./dot_vscode/settings.json
+    ~/.config/zed/settings.json: ./dot_zed/settings.json
     # /etc/greetd: ./dot_greetd_regreet

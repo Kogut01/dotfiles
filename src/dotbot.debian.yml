@@ -1,11 +1,11 @@
 - defaults:
     link:
-        create: true
-        relink: true
+      create: true
+      relink: true
     create:
-        mode: 0700
+      mode: 0700
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.config/bat: ./dot_bat
@@ -14,8 +14,6 @@
     ~/.config/git: ./dot_git
     ~/.config/lsd: ./dot_lsd
     ~/.config/nvim: ./dot_nvim
-
-- link:
     ~/.config/starship: ./dot_starship
     ~/.config/zsh: ./dot_zsh/conf
     ~/.zshrc: ./dot_zsh/.zshrc
@@ -31,6 +29,6 @@
       stderr: true
 
 - shell:
-    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then chsh -s "$(which zsh)"; fi'
+    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then sudo chsh -s "$(which zsh)"; fi'
       stdout: true
       stderr: true
