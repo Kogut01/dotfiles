@@ -8,6 +8,7 @@
 - clean: ["~"]
 
 - link:
+    ~/.config/superfile/config.toml: ./dot_superfile/config.toml
     ~/.config/bat: ./dot_bat
     ~/.config/btop: ./dot_btop
     ~/.config/fastfetch: ./dot_fastfetch
@@ -19,9 +20,9 @@
     ~/.zshrc: ./dot_zsh/.zshrc
 
 - link:
+    ~/.config/zed/settings.json: ./dot_zed/settings.json
     ~/.config/ghostty: ./dot_ghostty
     ~/.config/hypr: ./dot_hyprland
     ~/.config/hyprpanel: ./dot_hyprpanel
     ~/.config/rofi: ./dot_rofi
-    ~/.config/zed/settings.json: ./dot_zed/settings.json
     # /etc/greetd: ./dot_greetd_regreet

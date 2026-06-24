@@ -1,8 +1,8 @@
 # -----------
-# 0. Plugins 
+# 0. Plugins
 # -----------
 [[ -r ~/.config/.zsh-plugins/znap/znap.zsh ]] ||
-    git clone --depth 1 https://github.com/marlonrichert/zsh-snap.git ~/.config/.zsh-plugins//znap
+    git clone --depth 1 https://github.com/marlonrichert/zsh-snap.git ~/.config/.zsh-plugins/znap
 
 source ~/.config/.zsh-plugins/znap/znap.zsh
 

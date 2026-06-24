@@ -8,6 +8,7 @@ alias lt='lsd --tree'
 alias vi='nvim'
 alias ff='fastfetch'
 
-alias ranger='spf'
+alias sf='spf'
+alias cat='bat'
 
 alias grep='grep --color=always'
