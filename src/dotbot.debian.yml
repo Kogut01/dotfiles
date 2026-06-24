@@ -26,6 +26,11 @@
       stderr: true
 
 - shell:
+    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ ! -x "$(which zsh)" ]; then sudo apt install -y zsh; fi'
+      stdout: true
+      stderr: true
+
+- shell:
     - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then chsh -s "$(which zsh)"; fi'
       stdout: true
       stderr: true
