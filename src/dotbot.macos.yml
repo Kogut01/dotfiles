@@ -30,6 +30,6 @@
       stderr: true
 
 - shell:
-    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then sudo chsh -s "$(which zsh)"; fi'
+    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then sudo chsh -s "$(which zsh)" $USER; fi'
       stdout: true
       stderr: true
