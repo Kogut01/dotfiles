@@ -2,7 +2,7 @@
 
 config-default-files = false
 quick-terminal-animation-duration = 1.5
-clipboard-read = allow
+clipboard-read = ask
 clipboard-write = allow
 copy-on-select = true
 window-theme = dark

@@ -61,6 +61,7 @@ style = "yellow"
 format = "[$symbol$context]($style)"
 
 [kubernetes]
+disabled = false
 format = "[$symbol$context]($style)"
 
 [python]

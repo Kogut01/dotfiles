@@ -5,7 +5,10 @@
     create:
       mode: 0700
 
-- clean: ["~"]
+- clean:
+  ~:
+    ~/.config:
+      recursive: true
 
 - link:
     ~/.config/superfile/config.toml: ./dot_superfile/config.toml
