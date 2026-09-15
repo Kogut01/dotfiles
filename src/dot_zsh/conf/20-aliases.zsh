@@ -11,4 +11,4 @@ alias ff='fastfetch'
 alias sf='spf'
 alias cat='bat'
 
-alias grep='grep --color=always'
+alias grep='grep --color=auto'

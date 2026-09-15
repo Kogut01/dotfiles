@@ -1,4 +1,4 @@
---style=grid,numbers,header
---color=always
+--style=grid,header
+--color=auto
 --paging=auto
 --theme="Dracula"
