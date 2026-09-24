@@ -101,4 +101,4 @@ style = "blue"
 # --------------
 [character]
 success_symbol = "[❯](bold red)"
-error_symbol = "[❯](bold red)"
+error_symbol = "[✖](bold red)"

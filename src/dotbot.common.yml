@@ -6,26 +6,20 @@
       mode: 0700
 
 - clean:
-  ~:
-    ~/.config:
+    "~":
+      force: false
+    "~/.config":
       recursive: true
 
 - link:
-    ~/.config/superfile/config.toml: ./dot_superfile/config.toml
     ~/.config/bat: ./dot_bat
     ~/.config/btop: ./dot_btop
     ~/.config/fastfetch: ./dot_fastfetch
+    ~/.config/fd: ./dot_fd
     ~/.config/git: ./dot_git
     ~/.config/lsd: ./dot_lsd
     ~/.config/nvim: ./dot_nvim
     ~/.config/starship: ./dot_starship
+    ~/.config/superfile/config.toml: ./dot_superfile/config.toml
     ~/.config/zsh: ./dot_zsh/conf
     ~/.zshrc: ./dot_zsh/.zshrc
-
-- link:
-    ~/.config/zed/settings.json: ./dot_zed/settings.json
-    ~/.config/ghostty: ./dot_ghostty
-    ~/.config/hypr: ./dot_hyprland
-    ~/.config/hyprpanel: ./dot_hyprpanel
-    ~/.config/rofi: ./dot_rofi
-    # /etc/greetd: ./dot_greetd_regreet

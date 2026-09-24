@@ -1,110 +1,80 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "~/.config/fastfetch/rooster.txt",
-    "height": 18, 
-    "color": {
-      "1": "251"
-  }
+    "type": "file",
+    "source": "~/.config/fastfetch/kogut01.txt",
+    "position": "top",
+    "color": { "1": "#bd93f9" },
   },
   "display": {
-    "separator": " : "
+    "separator": "  ",
+    "color": { "keys": "#bd93f9", "output": "#f8f8f2" },
   },
   "modules": [
-    "break",
     {
-      "type": "os",
-      "key": "  󰒓  OS        ",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "kernel",
-      "key": "    Kernel    ",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "packages",
-      "key": "  󰏗  Packages  ",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "display",
-      "key": "  󰍹  Display   ",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "wm",
-      "key": "    WM        ",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "terminal",
-      "key": "    Terminal  ",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "shell",
-      "key": "    Shell     ",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "command",
-      "key": "  󱦟  OS Age    ",
-      "keyColor": "38:5:214",
-      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
-    },
-    {
-      "type": "uptime",
-      "key": "    Uptime    ",
-      "keyColor": "38:5:214"
-    },
-    "break",
-    {
-      "type": "command",
-      "key": "  󰊤  GitHub    ",
-      "keyColor": "38:5:214",
-      "text": "echo Kogut01"
-    },
-    {
-      "type": "host",
-      "key": "  󰌢  Host      ",
-      "keyColor": "38:5:214"
+      "type": "custom",
+      "key": "╭───────────────╮",
+      "format": "",
     },
     {
       "type": "title",
-      "key": "  󰙄  User      ",
-      "keyColor": "38:5:214"
+      "key": "{#keys}│{##ff79c6}    user      {#keys}│",
+      "format": "{user-name}",
     },
-    "break",
+    {
+      "type": "uptime",
+      "key": "{#keys}│{##8be9fd}  󰅐  uptime    {#keys}│",
+    },
+    {
+      "type": "os",
+      "key": "{#keys}│{##bd93f9}    distro    {#keys}│",
+    },
+    {
+      "type": "kernel",
+      "key": "{#keys}│{##ff79c6}    kernel    {#keys}│",
+    },
+    {
+      "type": "terminal",
+      "key": "{#keys}│{##ff5555}    term      {#keys}│",
+    },
+    {
+      "type": "shell",
+      "key": "{#keys}│{##50fa7b}    shell     {#keys}│",
+    },
     {
       "type": "cpu",
-      "format": "{1}",
-      "key": "    CPU       ",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "gpu",
-      "format": "{2}",
-      "key": "    GPU       ",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "gpu",
-      "format": "{3}",
-      "key": "    GPU Driver",
-      "keyColor": "38:5:214"
-    },
-    {
-      "type": "memory",
-      "key": "    Memory    ",
-      "keyColor": "38:5:214"
+      "key": "{#keys}│{##f1fa8c}  󰍛  cpu       {#keys}│",
+      "showPeCoreCount": true,
     },
     {
       "type": "disk",
-      "key": "    Disk      ",
-      "keyColor": "38:5:214"
+      "key": "{#keys}│{##8be9fd}  󰉉  disk      {#keys}│",
+      "folders": "/",
+      "format": "{size-used} / {size-total} ({size-percentage})",
     },
-    "break"
-  ]
+    {
+      "type": "memory",
+      "key": "{#keys}│{##ff79c6}    memory    {#keys}│",
+    },
+    {
+      "type": "localip",
+      "key": "{#keys}│{##50fa7b}  󰩟  network   {#keys}│",
+      "format": "{ipv4} ({ifname})",
+    },
+    {
+      "type": "custom",
+      "key": "├───────────────┤",
+      "format": "",
+    },
+    {
+      "type": "colors",
+      "key": "{#keys}│{##f8f8f2}    colors    {#keys}│",
+      "symbol": "circle",
+    },
+    {
+      "type": "custom",
+      "key": "╰───────────────╯",
+      "format": "",
+    },
+  ],
 }
-

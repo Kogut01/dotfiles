@@ -1,38 +1,14 @@
-- defaults:
-    link:
-      create: true
-      relink: true
-    create:
-      mode: 0700
-
-- clean:
-  ~:
-    ~/.config:
-      recursive: true
-
-- link:
-    ~/.config/superfile/config.toml: ./dot_superfile/config.toml
-    ~/.config/bat: ./dot_bat
-    ~/.config/btop: ./dot_btop
-    ~/.config/fastfetch: ./dot_fastfetch
-    ~/.config/git: ./dot_git
-    ~/.config/lsd: ./dot_lsd
-    ~/.config/nvim: ./dot_nvim
-    ~/.config/starship: ./dot_starship
-    ~/.config/zsh: ./dot_zsh/conf
-    ~/.zshrc: ./dot_zsh/.zshrc
-
 - shell:
     - command: 'if [ -z "$GITHUB_ACTIONS" ]; then brew bundle --file=./dot_brew/brewfile_debian; fi'
       stdout: true
       stderr: true
 
 - shell:
-    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ ! -x "$(which zsh)" ]; then sudo apt install -y zsh; fi'
+    - command: 'if [ -z "$GITHUB_ACTIONS" ] && ! command -v zsh >/dev/null 2>&1; then sudo apt install -y zsh; fi'
       stdout: true
       stderr: true
 
 - shell:
-    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then sudo chsh -s "$(which zsh)" $USER; fi'
+    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then sudo chsh -s "$(command -v zsh)" "$USER"; fi'
       stdout: true
       stderr: true

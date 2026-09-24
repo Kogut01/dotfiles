@@ -8,7 +8,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 
 [![Linux](https://img.shields.io/badge/Linux-supported-FCC624?style=flat-square&logo=linux&logoColor=black)](#-linux)
 [![macOS](https://img.shields.io/badge/macOS-supported-000000?style=flat-square&logo=apple&logoColor=white)](#-macos)
-[![License](https://img.shields.io/github/license/Kogut01/dotfiles?style=flat-square&color=A3BE8C)](./LICENSE)
+[![License](https://img.shields.io/github/license/Kogut01/dotfiles?style=flat-square&color=A3BE8C)](../LICENSE)
 
 </div>
 
@@ -24,6 +24,7 @@ Spersonalizowane środowisko pracy — kompletna konfiguracja mojego systemu i u
 | 🍺 `homebrew` | [dot_brew](../src/dot_brew/) |
 | 📈 `btop` | [dot_btop](../src/dot_btop/) |
 | 🚀 `fastfetch` | [dot_fastfetch](../src/dot_fastfetch/) |
+| 🔦 `fd` | [dot_fd](../src/dot_fd/) |
 | 👻 `ghostty` | [dot_ghostty](../src/dot_ghostty/) |
 | 🐙 `git` | [dot_git](../src/dot_git/) |
 | 👋 `greetd + regreet` | [dot_greetd_regreet](../src/dot_greetd_regreet/) |

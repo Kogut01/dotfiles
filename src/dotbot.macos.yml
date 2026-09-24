@@ -1,31 +1,13 @@
-- defaults:
-    link:
-      create: true
-      relink: true
-    create:
-      mode: 0700
-
-- clean:
-  ~:
-    ~/.config:
-      recursive: true
-
 - link:
-    ~/.config/superfile/config.toml: ./dot_superfile/config.toml
-    ~/.config/bat: ./dot_bat
-    ~/.config/btop: ./dot_btop
-    ~/.config/fastfetch: ./dot_fastfetch
-    ~/.config/git: ./dot_git
-    ~/.config/lsd: ./dot_lsd
-    ~/.config/nvim: ./dot_nvim
-    ~/.config/starship: ./dot_starship
-    ~/.config/zsh: ./dot_zsh/conf
-    ~/.zshrc: ./dot_zsh/.zshrc
-
-- link:
-    ~/.config/zed/settings.json: ./dot_zed/settings.json
     ~/.config/ghostty: ./dot_ghostty
+    ~/.config/zed/settings.json: ./dot_zed/settings.json
     ~/.hushlogin: ./dot_hushlogin/hushlogin
+
+- link:
+    ~/Library/Fonts/MesloLGLNerdFont-Regular.ttf: ../data/fonts/meslo/ttf/MesloLGLNerdFont-Regular.ttf
+    ~/Library/Fonts/MesloLGLNerdFont-Bold.ttf: ../data/fonts/meslo/ttf/MesloLGLNerdFont-Bold.ttf
+    ~/Library/Fonts/MesloLGLNerdFont-Italic.ttf: ../data/fonts/meslo/ttf/MesloLGLNerdFont-Italic.ttf
+    ~/Library/Fonts/MesloLGLNerdFont-BoldItalic.ttf: ../data/fonts/meslo/ttf/MesloLGLNerdFont-BoldItalic.ttf
 
 - shell:
     - command: 'if [ -z "$GITHUB_ACTIONS" ]; then brew bundle --file=./dot_brew/brewfile_macos; fi'
@@ -33,6 +15,6 @@
       stderr: true
 
 - shell:
-    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then sudo chsh -s "$(which zsh)" $USER; fi'
+    - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then sudo chsh -s "$(command -v zsh)" "$USER"; fi'
       stdout: true
       stderr: true
