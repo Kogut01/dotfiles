@@ -10,9 +10,10 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 # ------------
 # 1. SSH Agent
 # ------------
-if [[ -S "$HOME/.bitwarden-ssh-agent.sock" && ( -z "$SSH_AUTH_SOCK" ||! _S "$SSH_AUTH_SOCK" ) ]]; then
+if [[ -S "$HOME/.bitwarden-ssh-agent.sock" && ( -z "$SSH_AUTH_SOCK" || ! -S "$SSH_AUTH_SOCK" ) ]]; then
     export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
 fi
+
 
 # ------------
 # 2. Homebrew

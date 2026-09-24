@@ -90,32 +90,14 @@ $RECYCLE.BIN/
 *.iml
 
 # ------------------------------------------
-# 4. Cache, logs and Dependency Directories
-# ------------------------------------------
-.cache/
-node_modules/
-.npm/
-.yarn/
-.nvm/
-.gem/
-.cargo/
-.rustup/
-.bundle/
-.local/share/
-.local/state/
-vendor/
-*.log
-
-# ------------------------------------------
-# 5. Temporary and Backup Files
+# 4. Temporary and Backup Files
 # ------------------------------------------
 *.bak
 *.tmp
 *.temp
-*.dockerfile.bak
 
 # ------------------------------------------
-# 6. Archive and Compressed Files
+# 5. Archive and Compressed Files
 # ------------------------------------------
 *.7z
 *.bz2

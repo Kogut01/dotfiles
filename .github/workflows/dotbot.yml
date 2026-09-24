@@ -1,49 +1,47 @@
 name: Dotbot
 run-name: >-
-    ${{ 
-        github.event_name == 'pull_request' 
-        && format('Pull Request Automation #{0} -> {1}', github.event.number, github.event.pull_request.title)
-    }}
+  ${{
+      github.event_name == 'pull_request'
+      && format('Pull Request Automation #{0} -> {1}', github.event.number, github.event.pull_request.title)
+  }}
 
 on:
-    pull_request:
-        types: [opened, synchronize, reopened]
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 concurrency:
-    group: ${{ github.workflow }}-${{ github.ref }}
-    cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-    dotbot:
-        name: Checking configuration - ${{ matrix.dotbot-config }}
-        runs-on: ${{ matrix.os }}
-        strategy:
-            matrix:
-                include:
-                    - os: ubuntu-latest
-                      dotbot-config: 'dotbot.arch.yml'
-                    - os: ubuntu-latest
-                      dotbot-config: 'dotbot.debian.yml'
-                    - os: macos-latest
-                      dotbot-config: 'dotbot.macos.yml'
+  dotbot:
+    name: Checking configuration - ${{ matrix.dotbot-config }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            dotbot-config: "dotbot.debian.yml"
+          - os: macos-latest
+            dotbot-config: "dotbot.macos.yml"
 
-        timeout-minutes: 15
+    timeout-minutes: 15
 
-        steps:
-        - name: 📥 Git -- Checkout repository
-          uses: actions/checkout@v7
-        
-        - name: 🐍 Python -- Set up
-          uses: actions/setup-python@v7
-          with:
-            python-version: 3.12
-            cache: 'pip'
+    steps:
+      - name: 📥 Git -- Checkout repository
+        uses: actions/checkout@v7
 
-        - name: 🐍 Python -- Install dependencies
-          uses: py-actions/py-dependency-install@v4
-          with:
-            update-pip: true
+      - name: 🐍 Python -- Set up
+        uses: actions/setup-python@v7
+        with:
+          python-version: 3.12
+          cache: "pip"
 
-        - name: 🤖 Dotbot -- Config Check
-          working-directory: src
-          run: dotbot -c ${{ matrix.dotbot-config }}
+      - name: 🐍 Python -- Install dependencies
+        uses: py-actions/py-dependency-install@v4
+        with:
+          update-pip: true
+
+      - name: 🤖 Dotbot -- Config Check
+        working-directory: src
+        run: dotbot -c dotbot.common.yml ${{ matrix.dotbot-config }}
