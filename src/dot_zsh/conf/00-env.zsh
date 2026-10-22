@@ -3,6 +3,7 @@
 # -----------------
 export LANG="pl_PL.UTF-8"
 export TERM_PROGRAM="ghostty"
+export TERM=xterm-256color
 export PATH="$HOME/.local/bin:$PATH"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
