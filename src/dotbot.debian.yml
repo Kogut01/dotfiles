@@ -9,6 +9,11 @@
       stderr: true
 
 - shell:
+    - command: 'if [ -z "$GITHUB_ACTIONS" ]; command -v zsh | sudo tee -a /etc/shells; fi'
+      stdout: true
+      stderr: true
+
+- shell:
     - command: 'if [ -z "$GITHUB_ACTIONS" ] && [ "$(basename "$SHELL")" != "zsh" ]; then sudo chsh -s "$(command -v zsh)" "$USER"; fi'
       stdout: true
       stderr: true
